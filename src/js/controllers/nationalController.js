@@ -7,7 +7,7 @@ angular.module('myApp.national',['ionic']).config(['$stateProvider',function ($s
         url:'/national',
         views:{
 
-            'national':{
+            'tabs-national':{
                    templateUrl:'nationalStore.html',
                    controller:'nationalController'
             }

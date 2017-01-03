@@ -1,0 +1,1052 @@
+
+/*顶部 分界线*/
+.collect_topHr{
+    width:100%;
+    height:1rem;
+}
+
+/*物品块*/
+.collect_block{
+    width:100%;
+    height:9.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom:1rem solid #eeeeee;
+}
+/*商品图片*/
+.collect_Image{
+    width: 7rem;
+    height:7rem;
+    margin-left: .6rem;
+
+}
+/*图片右边的内容*/
+.collect_blockRight{
+    height:100%;
+    width:78%;
+    margin-left:.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*商品详情标题*/
+.blockRight_title{
+    width:100%;
+    height:2.7rem;
+    line-height: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.blockRight_describe>span{
+    font-family: MicrosoftYaHei;
+    font-size:1.2rem;
+    color:#333333;
+}
+/*右边价格的样式*/
+.blockRight_titlePrice{
+    margin-right: 1rem;
+    margin-left: 1.1rem;
+    font-size:1.3rem;
+    font-family: MicrosoftYaHei;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #333333;
+
+}
+
+
+.blockRight_titlePrice>span:nth-child(2){
+    margin-top: .7rem;
+    font-family: MicrosoftYaHei;
+    font-size: 1.2rem;
+    color:#333333;
+}
+
+.btnBlock>button{
+    width:8.6rem;
+    padding: 0;
+    height:2.5rem;
+    font-size:1.2rem ;
+    border: .1rem solid #999999;
+    border-radius:.2rem;
+    background-color: transparent;
+    float: right;
+    margin-right: 1rem;
+}
+.btnBlock>button:nth-child(1){
+
+    border: .1rem solid #EA1E2D;
+    color: #EA1E2D;
+
+
+}
+
+
+/*首页的样式*/
+/*导航栏*/
+.home_bar{
+    height:4.6rem;
+    background-color:#f9fdfc;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.homeBar_logoDiv{
+
+    width:4.8rem;
+    height:2.45rem;
+    background:url('../../images/logo.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+input.homeBar_Input{
+    padding-left: 1.6rem;
+
+    display: inline-block;
+    width:26.25rem;
+    height:2.55rem;
+    background-color:#f9fdfc;
+    border: .1rem solid #b5b5b5;
+    border-radius:1.25rem /1.25rem;
+}
+.homeBar_search{
+    width:1.55rem;
+    height:1.55rem;
+    background:url(../../images/search.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right:1rem;
+    top:.75rem;
+
+}
+.homeBar_sideList{
+    width:2.2rem;
+    height:1.4rem;
+    background:url(../../images/sidelist.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.home_rec{
+    width:15.8rem;
+    height:2rem;
+
+    background: url('../../images/Recommend.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 1.1rem auto;
+}
+
+/*商品内容的盒子*/
+.home_goodsBox{
+    width: 38.1rem;
+    margin: 0 auto;
+}
+
+.home_goods{
+
+    background-color: white;
+    width:17.3rem;
+    height:15.7rem;
+    margin-bottom:.55rem;
+    margin-right:.5rem;
+    margin-left:.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.home_goods>img{
+    width: 17.3rem;
+    height:9.3rem;
+
+}
+.home_goods>span{
+    width: 15.7rem;
+    height:2.26rem;
+    font-size: 1.1rem;
+    color:#333;
+    line-height: 1.1rem;
+    overflow:hidden;
+    font-family: "Microsoft Yahei";
+
+
+
+}
+/*单个商品盒子*/
+.home_goodsContentBox{
+    width: 15.7rem;
+}
+/*商品内容*/
+.home_goodsContent{
+
+    width:5.55rem;
+    height:1.05rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home_goodsContent>span:nth-child(1){
+     width:2.45rem;
+    height:1.05rem;
+    line-height: 1.05rem;
+    font-size: 1.05rem;
+    color: #e60012
+}
+.home_goodsContent>span:nth-child(2){
+    width:2.5rem;height:0.85rem;
+    line-height: 1.05rem;
+    font-size: 0.85rem;
+    text-decoration: line-through;
+    color: #999
+}
+
+
+div#rong-widget-minbtn{
+
+    width:10rem;
+    height:10rem;
+}
+div #rong-conversation{
+    left: 0;
+}
+.rongcloud-kefuBtnBox{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.rongcloud-kefuBtn .rongcloud-people{
+    display: none;
+}
+/*#rong-conversation{*/
+    /*width: 300px;*/
+    /*height: 800px;*/
+    /*display: inline-block;*/
+/*}*/
+#rong-widget-minbtn{
+    background:url("../../images/service1.png") no-repeat  center/100%;
+}
+.rongcloud-kefuChat #header{
+    background: #E60012;
+}
+.nation_cardBox{
+    width:100%;
+    height:24rem;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+
+}
+.nation_cardBox>img{
+    width:100%;
+    height:17rem;
+    background-color: pink;
+}
+.nation_cardBox>div{
+     width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 0 auto;
+    height:5rem;
+}
+
+/*导航栏*/
+.order_header{
+    width:100%;
+    height:3.5rem;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: .5rem;
+
+
+}
+/*导航栏里的小块*/
+.order_header>span{
+    display: flex;
+    justify-content: center;
+    width:20%;
+    border-right: .1rem solid #999;
+}
+/*导航栏里的最后一块*/
+.order_header>span:nth-last-child(1){
+    border: 0;
+}
+
+.order_content{
+    width: 100%;
+    /*height:19.1rem;*/
+    background-color: white;
+    margin-bottom: 1rem;
+}
+.orderContent_header{
+    width: 97%;
+    margin: 0 auto;
+    height:2.75rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+/*卡片中间的页面*/
+.orderContent_center{
+
+     width:100%;
+    height:8.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#eeeeee ;
+    margin-bottom: 1rem;
+}
+.orderContent_center>img{
+    margin-left: .3rem;
+    width:7rem;
+    height: 7rem;
+}
+.orderContent_centerTitle{
+    margin-left: .3rem;
+    width: 29.35rem;
+    /*background-color: palegreen;*/
+    height:6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+}
+
+.orderContent_centerTitle>span{
+    display: inline-block;
+    width:20rem;
+    height: 2.7rem;
+    font-size: 1.2rem;
+    color:#333333;
+    line-height:1.35rem;
+    font-family: MicrosoftYaHei;
+}
+
+
+.orderContent_centerTitle>div{
+    margin-right: .3rem;
+   display:flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    justify-content: flex-end ;
+    align-items: flex-end;
+    width: 3.35rem;
+}
+
+.order_price{
+    width:100%;
+    height:1.15rem;
+    font-size: 1.15rem;
+    line-height: 1.15rem;
+    justify-content: flex-end;
+    display: flex;
+    margin-bottom: 1.25rem;
+}
+/*功能按钮*/
+
+.order_buttons{
+    width:100%;
+    height:4.3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.order_buttons>button{
+    width: 7.35rem;
+    height:2.3rem;
+    background-color: transparent;
+    border:.1rem solid #e80516;
+    font-size: 1.2rem;
+    color:#e80516;
+    font-family:MicrosoftYaHei;
+    margin-right: 1.15rem;
+
+}
+button.special_btn{
+    color:black;
+    border:.1rem solid #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+/*
+
+ 适配手机
+*/
+/*第一部分个人用户信息*/
+.person_content{
+    background-color: #eeeeee;
+}
+
+.person_Info{
+    width:100%;
+    height:10.4rem;
+    display: flex;
+    background-color: white;
+    border-bottom:.2rem solid #eeeeee;
+}
+/*个人头像盒子*/
+.person_imgBox{
+
+    padding-left:1.35rem;
+    width: 24%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*个人头像盒子照片*/
+.person_imgBox>img{
+    width:7.5rem;
+    height: 7.5rem;
+}
+/*个人名字盒子*/
+.person_InfoNameBox{
+    height:100%;
+    margin-left:2rem;
+    width:76%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*个人名字*/
+.person_InfoNameBox>p{
+    font-size: 1.5rem;
+    margin-bottom:1.5rem;
+    color:#333333;
+    font-family: 微软雅黑;
+}
+/*积分*/
+.person_InfoNameBox>span{
+    font-size: 1.2rem;
+    color:#333333;
+    font-family: 微软雅黑;
+}
+
+/*第二部分 订单与收藏*/
+.person_orderCollect{
+    width:100%;
+    height:7.7rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+/*订单*/
+
+.person_order{
+    width:49%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/*订单图标*/
+.person_order>img{
+    width:2rem;
+    height:2.55rem;
+
+}
+/*订单文字*/
+.person_order>span{
+
+    font-size: 1.4rem;
+    color:#333333;
+    font-family: 微软雅黑;
+    margin-top:.9rem;
+
+}
+/*分界线*/
+.person_orderCollect>div:nth-child(2){
+    width:.1rem;
+    height:5.2rem ;
+    background-color: #CACACA;
+}
+/*收藏块*/
+.person_collect{
+    width:50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/*收藏图标*/
+.person_collect>img{
+    width:2.25rem;
+    height:2.25rem;
+
+}
+/*收藏文字*/
+.person_collect>span{
+
+    font-size: 1.4rem;
+    color:#333333;
+    font-family: 微软雅黑;
+    margin-top:.9rem;
+
+}
+/*分界线*/
+.person_hr{
+    width:100%;
+    height:1rem;
+    background-color: #eeeeee;
+}
+.person_hrBold{
+    width:100%;
+    height:1rem;
+    /*background-color: #eeeeee;*/
+}
+/*功能栏*/
+.person_funBlock{
+    width:100%;
+    height:5.1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-bottom:.1rem solid #eeeeee;
+}
+
+.person_funImageBox{
+    height:100%;
+    width:7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.person_shopIcon{
+    width:2.15rem;
+    height:2.1rem;
+}
+
+.person_funBlock_text{
+    width:80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.person_funBlock_text>span{
+
+    font-size: 1.6rem;
+    color:#333333;
+    font-family: 微软雅黑;
+}
+.person_numsArrow{
+    width:.95rem;
+    height: 1.6rem;
+    margin-right:1rem;
+}
+.person_creditIcon{
+    margin-left: 1.75rem;
+    margin-right: 1.25rem;
+    width: 2.2rem;
+    height:1.95rem;
+
+}
+.person_addressIcon{
+    width: 1.55rem;
+    height:2.3rem;
+
+}
+.person_payIcon{
+    width: 2.4rem;
+    height:2.1rem;
+
+}
+.person_concernIcon{
+    width: 2.1rem;
+    height:1.85rem;
+}
+.person_funBlock_note{
+    display: flex;
+    align-items: center
+}
+.person_funBlock_note>span:nth-child(1){
+    margin-right:.65rem;
+    font-size: 1.55rem;
+    color:#333333;
+    font-family: 微软雅黑;
+}
+
+html{
+    font-size: 62.5%;
+}
+div.modal-backdrop{
+
+    background-color:rgba(143,135,131,.5);
+}
+
+
+/*ion-modal-view 的样式*/
+#shopCard{
+    position:fixed;
+    height: auto;
+    top: auto;
+    bottom:0;
+    min-height: inherit;
+
+
+}
+
+
+/*加入购物车的全部内容*/
+#card{
+    width:100%;
+    height:20.85rem;
+
+}
+/*购物车内容 第一部分 商品和详情*/
+.shopCard_top{
+    height:10.15rem;
+    width: 100%;
+    display:flex;
+    justify-content:space-between ;
+    align-items: center;
+
+}
+/*第一部分左边图片*/
+.shopCard_top>img{
+    width:14.6rem;
+    margin-left:1.5rem;
+    height:7.7rem;
+}
+/*card 头部右边的内容*/
+.shopCard_top>div{
+    margin-left: 1.3rem;
+    height:7.7rem;
+    margin-right: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+/*第一部分右边标题详情*/
+.shopModal_title>h4{
+    margin: 0;
+    padding: 0;
+    height:3.1rem;
+    font-size:1.3rem ;
+    color:#333333;
+    font-family: 微软雅黑;
+}
+/*商品价钱*/
+.shopModal_title>p{
+    margin: 0;
+    padding: 0;
+    margin-top:.7rem;
+    color:#E80516 ;
+    font-family: 微软雅黑;
+    font-size: 1.5rem;
+
+}
+/*价钱符号*/
+.shopModal_title>p>span{
+    font-size: 1.2rem;
+}
+.shopCard_topBottom{
+    display: flex;
+    width:90%;
+    font-size: 1.1rem;
+    color: #666666;
+    font-family: 微软雅黑;
+    justify-content: space-between;
+}
+/*第一部分与第二部分分界线*/
+.shopCard_TopHr{
+    width:95%;
+    margin: 0 auto;
+    height:.1rem;
+    background-color:#E2E2E2;
+}
+/*第二部分 数量操作样式*/
+.shopCard_center{
+
+    height:5.4rem;
+    width: 100%;
+
+}
+/*第二部分 数量操作样式内容*/
+.shopCard_centerBox{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    align-items: center;
+    height:100%;
+    margin: 0 auto;
+}
+/*左边数量的样式*/
+.shopCard_center_left{
+    font-size: 1.2rem;
+    vertical-align: top;
+    display: inline-block;
+    font-family: 微软雅黑;
+    color: #333333;
+}
+/*加减按钮中间的input的样式*/
+
+/*加减按钮的样式*/
+
+
+/*第三部分按钮样式*/
+.shopCard_bottom{
+    height:5.15rem;
+    width: 100%;
+    font-size: 0;
+    display: flex;
+    /*position: absolute;*/
+    /*top:0;*/
+}
+/*最下面的按钮*/
+
+.shopCard_bottom>button{
+    width:50%;
+    height:100%;
+    background-color: #e60012;
+    border: 0;
+    padding: 0;
+    color: white;
+
+    font-family: 微软雅黑;
+    font-size: 1.5rem;
+}
+.shopCard_bottom>button:nth-child(1){
+    background-color: #f27f88;
+}
+
+
+
+/*弹窗样式*/
+div.popup{
+
+    width:30.65rem;
+    height:17.6rem;
+}
+div.popup-head{
+    width:0;
+    height: 0;
+    padding: 0;
+    border: 0;
+}
+div.popup-body{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color:#333333;
+    font-family: MicrosoftYaHei;
+    align-items: center;
+    height: 14.4rem;
+}
+div.popup-buttons{
+    width: 100%;
+    height:5.2rem;
+}
+
+
+/*全选按钮背景*/
+.shopCH_header{
+    width:100%;
+    height:3.45rem;
+
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color:#333;
+    font-family: "Microsoft Yahei";
+
+
+}
+/*按钮*/
+.shopCH_radio{
+    width:1.25rem;
+    height: 1.25rem;
+    border:.1rem solid #666;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.2rem;
+    margin-left: 1rem;
+
+}
+/*按钮里面的小红点*/
+.shopCH_radio>span{
+    display: inline-block;
+    width:.65rem;
+    height: .65rem;
+    background-color:#E80516 ;
+    border-radius:50%;
+}
+/*卡片*/
+.shopCH_content{
+    width:100%;
+    height: 9.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+/*按钮右边内容*/
+.shopCH_contentRight{
+    width:37rem;
+    height: 9.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/*按钮右边图片*/
+.shopCH_contentRightImg{
+    width:7rem;
+    height:7rem;
+}
+/*图片右边内容的盒子*/
+.shopCH_contentRightSpan{
+
+    width: 22rem;
+    height: 7rem;
+    display: flex;
+
+
+
+}
+/*图片右边的标题*/
+.shopCH_contentRightSpan>span{
+
+ /*margin-left:.9rem ;*/
+    width:22rem;
+    height:4.1rem;
+    display: flex;
+    line-height: 1.3rem;
+    font-size:1.3rem ;
+}
+/*价格栏*/
+.shopCH_price{
+    width: 3.35rem;
+    height:7rem;
+    display: flex;
+    margin-right: .5rem;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.shopCH_price>span:nth-child(1){
+    font-size:1.3rem ;
+    color:#E80516;
+    font-family: "Microsoft Yahei";
+}
+.shopCH_price>span:nth-child(2){
+    font-size:1.2rem ;
+    color:#666666;
+    font-family: "Microsoft Yahei";
+}
+.shopCH_price>span:nth-child(3){
+  display: flex;
+   width:1.4rem ;
+    height:1.7rem;
+    background: url('../../images/wastebin.png') no-repeat ;
+    background-size:100% 100% ;
+    margin-top:1rem ;
+}
+
+@media all and (max-width: 480px){
+
+    .topCarouselImg{
+        height: 18rem;
+        width: 100%;
+    }
+}
+@media all and (min-width: 480px){
+    .topCarouselImg{
+        height: 24rem;
+        width: 100%;
+    }
+    /*.view-container{*/
+    /*width: 48rem;*/
+    /*}*/
+
+}
+html{
+    font-size: 62.5%;
+}
+.topCarousel{
+    position: relative;
+
+    /*width: calc(100% + 20px);*/
+    width: 100%;
+
+}
+.topCarousel .slider-pager{
+    text-align: right;
+    height: 3rem;
+}
+
+.topCarousel .slider-pager-page{
+    width: .1rem;
+}
+.topCarousel .ion-record{
+    position: relative;
+    bottom: -2rem;
+    right: 2rem;
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: white;
+}
+.slideBottomDiv{
+    position: absolute;
+    padding-left: 1.5rem;
+    bottom: .6rem;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    height: 3rem;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+}
+.popup-buttons{
+    border-top: solid 1px #d1d3d6;
+    padding: 0;
+    min-height: 0;
+}
+
+.popup-container .popup{
+    width: 300px;
+    border-radius: 6px;
+}
+/*.button.button-dark.button-clear{*/
+/*border-right: solid 1px #d1d3d6;*/
+/*}*/
+html{
+    font-size: 62.5%;
+    -webkit-user-select:auto;
+}
+body,.scroll{
+    -webkit-user-select:auto;
+}
+
+
+div .tab-item .icon{
+     width:1.7rem;
+    margin:0 auto;
+    height:1.9rem;
+    font-size: 1.9rem;
+}
+div.tabs{
+    padding: 0;
+
+}
+/*首页图标*/
+ .my-home-icon-on{
+     background: url('../../images/homepage.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+
+ }
+.my-home-icon-off{
+
+    background: url('../../images/homeSelect.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
+
+}
+
+
+ .my-credit-icon-on{
+     background: url('../../images/integStoresSelect.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+ }
+ .my-credit-icon-off{
+
+     background: url('../../images/mall.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+
+
+ }
+ /*加盟店*/
+
+ .my-napaStore-icon-on{
+     background: url('../../images/napaStoresSelected.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+ }
+ .my-napaStore-icon-off{
+
+     background: url('../../images/napaStores.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+
+
+ }
+ .my-personal-icon-on{
+     background: url('../../images/personSelected.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+ }
+ .my-personal-icon-off{
+
+     background: url('../../images/person.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+
+
+ }
+div.tabs{
+    background:white;
+    display: flex;
+    height: 5rem;
+
+}
+ div a.tab-item{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+
+ }
+a.tab-item-active{
+    height:5rem;
+    background: #E60012;
+    color:white;
+
+}

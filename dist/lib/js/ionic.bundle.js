@@ -32,7 +32,7 @@ window.ionic.version = '1.3.1';
   ionic.DelegateService = function(methodNames) {
 
     if (methodNames.indexOf('$getByHandle') > -1) {
-      throw new Error("Method '$getByHandle' is implicitly added to each delegate service. Do not list it as a method.");
+      throw new Error("Method '$getByHandle' is implicitly added to each delegate services. Do not list it as a method.");
     }
 
     function trueFn() { return true; }
@@ -65,7 +65,7 @@ window.ionic.version = '1.3.1';
 
 
       /**
-       * The delegate service (eg $ionicNavBarDelegate) is just an instance
+       * The delegate services (eg $ionicNavBarDelegate) is just an instance
        * with a non-defined handle, a couple extra methods for registering
        * and narrowing down to a specific handle.
        */
@@ -15133,7 +15133,7 @@ function reloadWithDebugInfo() {
  * @name angular.getTestability
  * @module ng
  * @description
- * Get the testability service for the instance of Angular on the given
+ * Get the testability services for the instance of Angular on the given
  * element.
  * @param {DOMElement} element DOM element which is the root of angular application.
  */
@@ -15450,9 +15450,9 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#provider
            * @module ng
-           * @param {string} name service name
+           * @param {string} name services name
            * @param {Function} providerType Construction function for creating new instance of the
-           *                                service.
+           *                                services.
            * @description
            * See {@link auto.$provide#provider $provide.provider()}.
            */
@@ -15462,8 +15462,8 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#factory
            * @module ng
-           * @param {string} name service name
-           * @param {Function} providerFunction Function for creating new instance of the service.
+           * @param {string} name services name
+           * @param {Function} providerFunction Function for creating new instance of the services.
            * @description
            * See {@link auto.$provide#factory $provide.factory()}.
            */
@@ -15473,10 +15473,10 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#service
            * @module ng
-           * @param {string} name service name
+           * @param {string} name services name
            * @param {Function} constructor A constructor function that will be instantiated.
            * @description
-           * See {@link auto.$provide#service $provide.service()}.
+           * See {@link auto.$provide#service $provide.services()}.
            */
           service: invokeLaterAndSetModuleName('$provide', 'service'),
 
@@ -15484,7 +15484,7 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#value
            * @module ng
-           * @param {string} name service name
+           * @param {string} name services name
            * @param {*} object Service instance object.
            * @description
            * See {@link auto.$provide#value $provide.value()}.
@@ -15507,9 +15507,9 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#decorator
            * @module ng
-           * @param {string} The name of the service to decorate.
-           * @param {Function} This function will be invoked when the service needs to be
-           *                                    instantiated and should return the decorated service instance.
+           * @param {string} The name of the services to decorate.
+           * @param {Function} This function will be invoked when the services needs to be
+           *                                    instantiated and should return the decorated services instance.
            * @description
            * See {@link auto.$provide#decorator $provide.decorator()}.
            */
@@ -15528,7 +15528,7 @@ function setupModuleLoader(window) {
            *
            *
            * Defines an animation hook that can be later used with
-           * {@link $animate $animate} service and directives that use this service.
+           * {@link $animate $animate} services and directives that use this services.
            *
            * ```js
            * module.animation('.animation-name', function($inject1, $inject2) {
@@ -15609,7 +15609,7 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#config
            * @module ng
-           * @param {Function} configFn Execute this function on module load. Useful for service
+           * @param {Function} configFn Execute this function on module load. Useful for services
            *    configuration.
            * @description
            * Use this method to register work which needs to be performed on module loading.
@@ -17033,7 +17033,7 @@ forEach({
 });
 
 
-// Provider for private $$jqLite service
+// Provider for private $$jqLite services
 function $$jqLiteProvider() {
   this.$get = function $$jqLite() {
     return extend(JQLite, {
@@ -17959,7 +17959,7 @@ function createInjector(modulesToLoad, strictDi) {
         var key = $inject[i];
         if (typeof key !== 'string') {
           throw $injectorMinErr('itkn',
-                  'Incorrect injection token! Expected service name as string, got {0}', key);
+                  'Incorrect injection token! Expected services name as string, got {0}', key);
         }
         args.push(locals && locals.hasOwnProperty(key) ? locals[key] :
                                                          getService(key, serviceName));
@@ -19090,7 +19090,7 @@ var $CoreAnimateCssProvider = function() {
     return function(element, initialOptions) {
       // all of the animation functions should create
       // a copy of the options data, however, if a
-      // parent service has already created a copy then
+      // parent services has already created a copy then
       // we should stick to using that
       var options = initialOptions || {};
       if (!options.$$prepared) {
@@ -19166,7 +19166,7 @@ var $CoreAnimateCssProvider = function() {
  * @param {object} window The global window object.
  * @param {object} document jQuery wrapped document.
  * @param {object} $log window.console or an object with the same interface.
- * @param {object} $sniffer $sniffer service
+ * @param {object} $sniffer $sniffer services
  */
 function Browser(window, document, $log, $sniffer) {
   var self = this,
@@ -19257,8 +19257,8 @@ function Browser(window, document, $log, $sniffer) {
    * location.href/location.replace is used.
    * Returns its own instance to allow chaining
    *
-   * NOTE: this api is intended for use only by the $location service. Please use the
-   * {@link ng.$location $location service} to change url.
+   * NOTE: this api is intended for use only by the $location services. Please use the
+   * {@link ng.$location $location services} to change url.
    *
    * @param {string} url New url (when used as setter)
    * @param {boolean=} replace Should new url replace current history record?
@@ -19388,8 +19388,8 @@ function Browser(window, document, $log, $sniffer) {
    *
    * The listener gets called with new url as parameter.
    *
-   * NOTE: this api is intended for use only by the $location service. Please use the
-   * {@link ng.$location $location service} to monitor url changes in angular apps.
+   * NOTE: this api is intended for use only by the $location services. Please use the
+   * {@link ng.$location $location services} to monitor url changes in angular apps.
    *
    * @param {function(string)} listener Listener function to be called when url changes.
    * @return {function(string)} Returns the registered listener fn - handy if the fn is anonymous.
@@ -22888,7 +22888,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
                   $watch(interpolateFn, function interpolateFnWatchAction(newValue, oldValue) {
                     //special case for class attribute addition + removal
                     //so that class changes can tap into the animation
-                    //hooks provided by the $animate service. Be sure to
+                    //hooks provided by the $animate services. Be sure to
                     //skip animations when the first digest occurs (when
                     //both the new and the old values are the same) since
                     //the CSS classes are the non-interpolated values
@@ -23845,7 +23845,7 @@ function $HttpProvider() {
    * @name $httpProvider#useApplyAsync
    * @description
    *
-   * Configure $http service to combine processing of multiple http responses received at around
+   * Configure $http services to combine processing of multiple http responses received at around
    * the same time via {@link ng.$rootScope.Scope#$applyAsync $rootScope.$applyAsync}. This can result in
    * significant performance improvement for bigger applications that make many HTTP requests
    * concurrently (common during application bootstrap).
@@ -23873,7 +23873,7 @@ function $HttpProvider() {
    * @name $httpProvider#useLegacyPromiseExtensions
    * @description
    *
-   * Configure `$http` service to return promises without the shorthand methods `success` and `error`.
+   * Configure `$http` services to return promises without the shorthand methods `success` and `error`.
    * This should be used to make sure that applications work without these methods.
    *
    * Defaults to true. If no value is specified, returns the current configured value.
@@ -25736,7 +25736,7 @@ function serverBase(url) {
 
 /**
  * LocationHtml5Url represents an url
- * This object is exposed as $location service when HTML5 mode is enabled and supported
+ * This object is exposed as $location services when HTML5 mode is enabled and supported
  *
  * @constructor
  * @param {string} appBase application base URL
@@ -25814,7 +25814,7 @@ function LocationHtml5Url(appBase, appBaseNoFile, basePrefix) {
 
 /**
  * LocationHashbangUrl represents url
- * This object is exposed as $location service when developer doesn't opt into html5 mode.
+ * This object is exposed as $location services when developer doesn't opt into html5 mode.
  * It also serves as the base class for html5 mode fallback on legacy browsers.
  *
  * @constructor
@@ -25926,7 +25926,7 @@ function LocationHashbangUrl(appBase, appBaseNoFile, hashPrefix) {
 
 /**
  * LocationHashbangUrl represents url
- * This object is exposed as $location service when html5 history api is enabled but the browser
+ * This object is exposed as $location services when html5 history api is enabled but the browser
  * does not support it.
  *
  * @constructor
@@ -28556,7 +28556,7 @@ function $ParseProvider() {
    * @name $parseProvider#addLiteral
    * @description
    *
-   * Configure $parse service to add literal values that will be present as literal at expressions.
+   * Configure $parse services to add literal values that will be present as literal at expressions.
    *
    * @param {string} literalName Token for the literal value. The literal name value must be a valid literal name.
    * @param {*} literalValue Value for this literal. All literal values must be primitives or `undefined`.
@@ -29591,12 +29591,12 @@ function $RootScopeProvider() {
      * details.
      *
      *
-     * @param {Object.<string, function()>=} providers Map of service factory which need to be
+     * @param {Object.<string, function()>=} providers Map of services factory which need to be
      *                                       provided for the current scope. Defaults to {@link ng}.
      * @param {Object.<string, *>=} instanceCache Provides pre-instantiated services which should
      *                              append/override services provided by `providers`. This is handy
      *                              when unit-testing and having the need to override a default
-     *                              service.
+     *                              services.
      * @returns {Object} Newly created scope.
      *
      */
@@ -30412,7 +30412,7 @@ function $RootScopeProvider() {
        *     `expression` execution.
        *
        * Any exceptions from the execution of the expression are forwarded to the
-       * {@link ng.$exceptionHandler $exceptionHandler} service.
+       * {@link ng.$exceptionHandler $exceptionHandler} services.
        *
        * __Note:__ if this function is called outside of a `$digest` cycle, a new `$digest` cycle
        * will be scheduled. However, it is encouraged to always call code that changes the model
@@ -30476,7 +30476,7 @@ function $RootScopeProvider() {
        * 1. The {@link guide/expression expression} is executed using the
        *    {@link ng.$rootScope.Scope#$eval $eval()} method.
        * 2. Any exceptions from the execution of the expression are forwarded to the
-       *    {@link ng.$exceptionHandler $exceptionHandler} service.
+       *    {@link ng.$exceptionHandler $exceptionHandler} services.
        * 3. The {@link ng.$rootScope.Scope#$watch watch} listeners are fired immediately after the
        *    expression was executed using the {@link ng.$rootScope.Scope#$digest $digest()} method.
        *
@@ -30605,7 +30605,7 @@ function $RootScopeProvider() {
        * cancels it.
        *
        * Any exception emitted from the {@link ng.$rootScope.Scope#$on listeners} will be passed
-       * onto the {@link ng.$exceptionHandler $exceptionHandler} service.
+       * onto the {@link ng.$exceptionHandler $exceptionHandler} services.
        *
        * @param {string} name Event name to emit.
        * @param {...*} args Optional one or more arguments which will be passed onto the event listeners.
@@ -30677,7 +30677,7 @@ function $RootScopeProvider() {
        * scope and calls all registered listeners along the way. The event cannot be canceled.
        *
        * Any exception emitted from the {@link ng.$rootScope.Scope#$on listeners} will be passed
-       * onto the {@link ng.$exceptionHandler $exceptionHandler} service.
+       * onto the {@link ng.$exceptionHandler $exceptionHandler} services.
        *
        * @param {string} name Event name to broadcast.
        * @param {...*} args Optional one or more arguments which will be passed onto the event listeners.
@@ -30820,7 +30820,7 @@ function $RootScopeProvider() {
 
 /**
  * @description
- * Private service to sanitize uris for links and images. Used by $compile and $sanitize.
+ * Private services to sanitize uris for links and images. Used by $compile and $sanitize.
  */
 function $$SanitizeUriProvider() {
   var aHrefSanitizationWhitelist = /^\s*(https?|ftp|mailto|tel|file):/,
@@ -31585,7 +31585,7 @@ function $SceProvider() {
    * The SCE delegate object must provide the following 3 methods:
    *
    * - trustAs(contextEnum, value)
-   *     This method is used to tell the SCE service that the provided value is OK to use in the
+   *     This method is used to tell the SCE services that the provided value is OK to use in the
    *     contexts specified by contextEnum.  It must return an object that will be accepted by
    *     getTrusted() for a compatible contextEnum and return this value.
    *
@@ -32064,7 +32064,7 @@ function $TemplateRequestProvider() {
    * @ngdoc method
    * @name $templateRequestProvider#httpOptions
    * @description
-   * The options to be passed to the {@link $http} service when making the request.
+   * The options to be passed to the {@link $http} services when making the request.
    * You can use this to override options such as the "Accept" header for template requests.
    *
    * The {@link $templateRequest} will set the `cache` and the `transformResponse` properties of the
@@ -32365,12 +32365,12 @@ function $TimeoutProvider() {
 }
 
 // NOTE:  The usage of window and document instead of $window and $document here is
-// deliberate.  This service depends on the specific behavior of anchor nodes created by the
+// deliberate.  This services depends on the specific behavior of anchor nodes created by the
 // browser (resolving and parsing URLs) that is unlikely to be provided by mock objects and
 // cause us to break tests.  In addition, when the browser resolves a URL for XHR, it
 // doesn't know about mocked locations and resolves URLs to the real document - which is
 // exactly the behavior needed here.  There is little value is mocking these out for this
-// service.
+// services.
 var urlParsingNode = document.createElement("a");
 var originUrl = urlResolve(window.location.href);
 
@@ -41660,7 +41660,7 @@ var ngPluralizeDirective = ['$locale', '$interpolate', '$log', function($locale,
 
         if (!countIsNaN && !(count in whens)) {
           // If an explicit number rule such as 1, 2, 3... is defined, just use it.
-          // Otherwise, check it against pluralization rules in $locale service.
+          // Otherwise, check it against pluralization rules in $locale services.
           count = $locale.pluralCat(count - offset);
         }
 
@@ -45041,7 +45041,7 @@ var $AnimateCssProvider = ['$animateProvider', function($animateProvider) {
         gcsStaggerLookup.flush();
 
         // DO NOT REMOVE THIS LINE OR REFACTOR OUT THE `pageWidth` variable.
-        // PLEASE EXAMINE THE `$$forceReflow` service to understand why.
+        // PLEASE EXAMINE THE `$$forceReflow` services to understand why.
         var pageWidth = $$forceReflow();
 
         // we use a for loop to ensure that if the queue is changed
@@ -45070,7 +45070,7 @@ var $AnimateCssProvider = ['$animateProvider', function($animateProvider) {
     return function init(element, initialOptions) {
       // all of the animation functions should create
       // a copy of the options data, however, if a
-      // parent service has already created a copy then
+      // parent services has already created a copy then
       // we should stick to using that
       var options = initialOptions || {};
       if (!options.$$prepared) {
@@ -48729,7 +48729,7 @@ function stripCustomNsAttrs(node) {
 
 
 
-// define ngSanitize module and register $sanitize service
+// define ngSanitize module and register $sanitize services
 angular.module('ngSanitize', []).provider('$sanitize', $SanitizeProvider);
 
 /* global sanitizeText: false */
@@ -49476,7 +49476,7 @@ function $Resolve(  $q,    $injector) {
    * This is true even for dependencies inherited from a `parent` call to `$resolve`.
    *
    * As a special case, an invocable can be a string, in which case it is taken to 
-   * be a service name to be passed to `$injector.get()`. This is supported primarily 
+   * be a services name to be passed to `$injector.get()`. This is supported primarily
    * for backwards-compatibility with the `resolve` property of `$routeProvider` 
    * routes.
    *
@@ -50406,8 +50406,8 @@ function $UrlMatcherFactory() {
    * handle encoding and decoding parameter values:
    *
    * <pre>
-   * // Defines a custom type that gets a value from a service,
-   * // where each service gets different types of values from
+   * // Defines a custom type that gets a value from a services,
+   * // where each services gets different types of values from
    * // a backend API:
    * $urlMatcherFactoryProvider.type('dbObject', {}, function(Users, Posts) {
    *
@@ -50424,7 +50424,7 @@ function $UrlMatcherFactory() {
    *     },
    *     decode: function(value, key) {
    *       // Look up the object by ID, using the parameter
-   *       // name (key) to call the correct service
+   *       // name (key) to call the correct services
    *       return services[key].findById(value);
    *     },
    *     is: function(object, key) {
@@ -50448,7 +50448,7 @@ function $UrlMatcherFactory() {
    *   url: "/{user:dbObject}",
    *   controller: function($scope, $stateParams) {
    *     // $stateParams.user will now be an object returned from
-   *     // the Users service
+   *     // the Users services
    *   },
    *   // ...
    * });
@@ -50869,7 +50869,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    * }).run(function ($rootScope, $urlRouter, UserService) {
    *
    *   $rootScope.$on('$locationChangeSuccess', function(e) {
-   *     // UserService is an example service for managing user state
+   *     // UserService is an example services for managing user state
    *     if (UserService.isLoggedIn()) return;
    *
    *     // Prevent $urlRouter's default handler from firing
@@ -52521,7 +52521,7 @@ function $ViewScrollProvider() {
    * @methodOf ui.router.state.$uiViewScrollProvider
    *
    * @description
-   * Reverts back to using the core [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll) service for
+   * Reverts back to using the core [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll) services for
    * scrolling based on the url anchor.
    */
   this.useAnchorScroll = function () {
@@ -53644,7 +53644,7 @@ IonicModule
      * @name $ionicBody#addClass
      * @description Add a class to the document's body element.
      * @param {string} class Each argument will be added to the body element.
-     * @returns {$ionicBody} The $ionicBody service so methods can be chained.
+     * @returns {$ionicBody} The $ionicBody services so methods can be chained.
      */
     addClass: function() {
       for (var x = 0; x < arguments.length; x++) {
@@ -53657,7 +53657,7 @@ IonicModule
      * @name $ionicBody#removeClass
      * @description Remove a class from the document's body element.
      * @param {string} class Each argument will be removed from the body element.
-     * @returns {$ionicBody} The $ionicBody service so methods can be chained.
+     * @returns {$ionicBody} The $ionicBody services so methods can be chained.
      */
     removeClass: function() {
       for (var x = 0; x < arguments.length; x++) {
@@ -53675,7 +53675,7 @@ IonicModule
      * @param {boolean} shouldEnableClass A true/false value if the class should be added or removed.
      * @param {string} class Each remaining argument would be added or removed depending on
      * the first argument.
-     * @returns {$ionicBody} The $ionicBody service so methods can be chained.
+     * @returns {$ionicBody} The $ionicBody services so methods can be chained.
      */
     enableClass: function(shouldEnableClass) {
       var args = Array.prototype.slice.call(arguments).slice(1);
@@ -53692,7 +53692,7 @@ IonicModule
      * @description Append a child to the document's body.
      * @param {element} element The element to be appended to the body. The passed in element
      * can be either a jqLite element, or a DOM element.
-     * @returns {$ionicBody} The $ionicBody service so methods can be chained.
+     * @returns {$ionicBody} The $ionicBody services so methods can be chained.
      */
     append: function(ele) {
       $document[0].body.appendChild(ele.length ? ele[0] : ele);
@@ -57734,7 +57734,7 @@ IonicModule
 .factory('$ionicViewService', ['$ionicHistory', '$log', function($ionicHistory, $log) {
 
   function warn(oldMethod, newMethod) {
-    $log.warn('$ionicViewService' + oldMethod + ' is deprecated, please use $ionicHistory' + newMethod + ' instead: http://ionicframework.com/docs/nightly/api/service/$ionicHistory/');
+    $log.warn('$ionicViewService' + oldMethod + ' is deprecated, please use $ionicHistory' + newMethod + ' instead: http://ionicframework.com/docs/nightly/api/services/$ionicHistory/');
   }
 
   warn('', '');
@@ -61921,7 +61921,7 @@ function($scope, $element, $attrs, $compile, $rootScope) {
 
 /*
  * We don't document the ionActionSheet directive, we instead document
- * the $ionicActionSheet service
+ * the $ionicActionSheet services
  */
 IonicModule
 .directive('ionActionSheet', ['$document', function($document) {
@@ -64753,7 +64753,7 @@ IonicModule
 
 /*
  * We don't document the ionModal directive, we instead document
- * the $ionicModal service
+ * the $ionicModal services
  */
 IonicModule
 .directive('ionModal', [function() {
@@ -65473,7 +65473,7 @@ IonicModule
 
 /*
  * We don't document the ionPopover directive, we instead document
- * the $ionicPopover service
+ * the $ionicPopover services
  */
 IonicModule
 .directive('ionPopover', [function() {

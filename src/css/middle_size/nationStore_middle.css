@@ -1,0 +1,21 @@
+.nation_cardBox{
+    width:100%;
+    height:24rem;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+
+}
+.nation_cardBox>img{
+    width:100%;
+    height:17rem;
+    background-color: pink;
+}
+.nation_cardBox>div{
+     width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 0 auto;
+    height:5rem;
+}

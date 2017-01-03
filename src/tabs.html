@@ -1,37 +1,56 @@
-<ion-view>
 
 
-<ion-nav-bar class="bar-assertive"></ion-nav-bar>
+    <ion-side-menus delegate-handle="sideContent" on-drag="tabsDrag">
 
 
+         右侧菜单
+        <ion-side-menu side="right" width="150" >
 
-        <ion-tabs>
 
-            <ion-tab href="#/tabs/home"
-                     title="首页">
+            <h1> 我是侧边栏的东西</h1>
+        </ion-side-menu>
 
-                <ion-nav-view name="home"></ion-nav-view>
-            </ion-tab>
+        <ion-side-menu-content >
 
-            <ion-tab href="#/tabs/credit"
-                      title="积分商城">
+            <ion-tabs  class="tabs-icon-top  " id="myShopStore_tabs" >
+                <ion-tab href="#/tabs/home"
+                         icon-off="my-home-icon-on"
+                         icon-on="my-home-icon-off"
+                         title="首页">
 
-                <ion-nav-view name="credit"></ion-nav-view>
-            </ion-tab>
+                    <ion-nav-view name="tabs-home"></ion-nav-view>
+                </ion-tab>
 
-            <ion-tab href="#/tabs/national"
-                     title="加盟店">
+                <ion-tab href="#/tabs/credit"
+                         title="积分商城"
+                         icon-on="my-credit-icon-on"
+                         icon-off="my-credit-icon-off">
 
-                <ion-nav-view name="national"></ion-nav-view>
-            </ion-tab>
+                    <ion-nav-view name="tabs-credit"></ion-nav-view>
+                </ion-tab>
 
-            <ion-tab href="#/tabs/personal"
-                     title="个人中心">
+                <ion-tab href="#/tabs/national"
+                         icon-on="my-napaStore-icon-on"
+                         icon-off="my-napaStore-icon-off"
+                         title="加盟店">
 
-                <ion-nav-view name="personal"></ion-nav-view>
+                    <ion-nav-view name="tabs-national"></ion-nav-view>
+                </ion-tab>
 
-            </ion-tab>
+                <ion-tab href="#/tabs/personal"
+                         title="个人中心"
+                         icon-on="my-personal-icon-on"
+                         icon-off="my-personal-icon-off">
+
+                    <ion-nav-view name="tabs-personal"></ion-nav-view>
+
+                </ion-tab>
 
         </ion-tabs>
 
-</ion-view>
+        </ion-side-menu-content>
+    </ion-side-menus>
+
+
+
+

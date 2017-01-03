@@ -6,11 +6,23 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="lib/css/ionic.min.css">
+    <link rel="stylesheet" href="../dist/css/max_size/max_size.min.css" media="all and (min-width: 750px)">
+    <link rel="stylesheet" href="../dist/css/middle_size/middle_size.css" media="all and (max-width: 750px)">
+
+    <link rel="stylesheet" href="../dist/css/small_size/small_size.css" media="all and (max-width: 321px)">
+    <link rel="stylesheet" href="dist2/css/RongIMWidget.min.css">
+
     <title></title>
 </head>
 <body>
+<!--<div class="home_service" on-touch="home.serviceTouch($event)" on-drag="home.serviceDrag($event)">-->
+<rong-widget></rong-widget>
+
+<!--</div>-->
       <ion-nav-view></ion-nav-view>
+
 </body>
 </html>
 <script src="lib/js/ionic.bundle.js"></script>
+<script src="dist2/RongIMWidget.full.min.js"></script>
 <script src="js/all.min.js"></script>

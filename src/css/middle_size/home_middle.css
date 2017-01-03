@@ -1,0 +1,150 @@
+
+/*首页的样式*/
+/*导航栏*/
+.home_bar{
+    height:4.6rem;
+    background-color:#f9fdfc;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.homeBar_logoDiv{
+
+    width:4.8rem;
+    height:2.45rem;
+    background:url('../../images/logo.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+input.homeBar_Input{
+    padding-left: 1.6rem;
+
+    display: inline-block;
+    width:26.25rem;
+    height:2.55rem;
+    background-color:#f9fdfc;
+    border: .1rem solid #b5b5b5;
+    border-radius:1.25rem /1.25rem;
+}
+.homeBar_search{
+    width:1.55rem;
+    height:1.55rem;
+    background:url(../../images/search.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right:1rem;
+    top:.75rem;
+
+}
+.homeBar_sideList{
+    width:2.2rem;
+    height:1.4rem;
+    background:url(../../images/sidelist.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.home_rec{
+    width:15.8rem;
+    height:2rem;
+
+    background: url('../../images/Recommend.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 1.1rem auto;
+}
+
+/*商品内容的盒子*/
+.home_goodsBox{
+    width: 38.1rem;
+    margin: 0 auto;
+}
+
+.home_goods{
+
+    background-color: white;
+    width:17.3rem;
+    height:15.7rem;
+    margin-bottom:.55rem;
+    margin-right:.5rem;
+    margin-left:.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.home_goods>img{
+    width: 17.3rem;
+    height:9.3rem;
+
+}
+.home_goods>span{
+    width: 15.7rem;
+    height:2.26rem;
+    font-size: 1.1rem;
+    color:#333;
+    line-height: 1.1rem;
+    overflow:hidden;
+    font-family: "Microsoft Yahei";
+
+
+
+}
+/*单个商品盒子*/
+.home_goodsContentBox{
+    width: 15.7rem;
+}
+/*商品内容*/
+.home_goodsContent{
+
+    width:5.55rem;
+    height:1.05rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home_goodsContent>span:nth-child(1){
+     width:2.45rem;
+    height:1.05rem;
+    line-height: 1.05rem;
+    font-size: 1.05rem;
+    color: #e60012
+}
+.home_goodsContent>span:nth-child(2){
+    width:2.5rem;height:0.85rem;
+    line-height: 1.05rem;
+    font-size: 0.85rem;
+    text-decoration: line-through;
+    color: #999
+}
+
+
+div#rong-widget-minbtn{
+
+    width:10rem;
+    height:10rem;
+}
+div #rong-conversation{
+    left: 0;
+}
+.rongcloud-kefuBtnBox{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.rongcloud-kefuBtn .rongcloud-people{
+    display: none;
+}
+/*#rong-conversation{*/
+    /*width: 300px;*/
+    /*height: 800px;*/
+    /*display: inline-block;*/
+/*}*/
+#rong-widget-minbtn{
+    background:url("../../images/service1.png") no-repeat  center/100%;
+}
+.rongcloud-kefuChat #header{
+    background: #E60012;
+}

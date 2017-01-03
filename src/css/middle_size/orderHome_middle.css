@@ -1,0 +1,143 @@
+
+/*导航栏*/
+.order_header{
+    width:100%;
+    height:3.5rem;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: .5rem;
+
+
+}
+/*导航栏里的小块*/
+.order_header>span{
+    display: flex;
+    justify-content: center;
+    width:20%;
+    border-right: .1rem solid #999;
+}
+/*导航栏里的最后一块*/
+.order_header>span:nth-last-child(1){
+    border: 0;
+}
+
+.order_content{
+    width: 100%;
+    /*height:19.1rem;*/
+    background-color: white;
+    margin-bottom: 1rem;
+}
+.orderContent_header{
+    width: 97%;
+    margin: 0 auto;
+    height:2.75rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+/*卡片中间的页面*/
+.orderContent_center{
+
+     width:100%;
+    height:8.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#eeeeee ;
+    margin-bottom: 1rem;
+}
+.orderContent_center>img{
+    margin-left: .3rem;
+    width:7rem;
+    height: 7rem;
+}
+.orderContent_centerTitle{
+    margin-left: .3rem;
+    width: 29.35rem;
+    /*background-color: palegreen;*/
+    height:6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+}
+
+.orderContent_centerTitle>span{
+    display: inline-block;
+    width:20rem;
+    height: 2.7rem;
+    font-size: 1.2rem;
+    color:#333333;
+    line-height:1.35rem;
+    font-family: MicrosoftYaHei;
+}
+
+
+.orderContent_centerTitle>div{
+    margin-right: .3rem;
+   display:flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    justify-content: flex-end ;
+    align-items: flex-end;
+    width: 3.35rem;
+}
+
+.order_price{
+    width:100%;
+    height:1.15rem;
+    font-size: 1.15rem;
+    line-height: 1.15rem;
+    justify-content: flex-end;
+    display: flex;
+    margin-bottom: 1.25rem;
+}
+/*功能按钮*/
+
+.order_buttons{
+    width:100%;
+    height:4.3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.order_buttons>button{
+    width: 7.35rem;
+    height:2.3rem;
+    background-color: transparent;
+    border:.1rem solid #e80516;
+    font-size: 1.2rem;
+    color:#e80516;
+    font-family:MicrosoftYaHei;
+    margin-right: 1.15rem;
+
+}
+button.special_btn{
+    color:black;
+    border:.1rem solid #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

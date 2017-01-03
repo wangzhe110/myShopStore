@@ -1,0 +1,94 @@
+html{
+    font-size: 62.5%;
+    -webkit-user-select:auto;
+}
+body,.scroll{
+    -webkit-user-select:auto;
+}
+
+
+div .tab-item .icon{
+     width:3.4rem;
+    margin:0 auto;
+    height:3.8rem;
+    font-size: 3.8rem;
+}
+div.tabs{
+    padding: 0;
+}
+/*首页图标*/
+ .my-home-icon-on{
+     background: url('../../images/homepage.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+
+ }
+.my-home-icon-off{
+
+    background: url('../../images/homeSelect.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
+
+}
+
+
+ .my-credit-icon-on{
+     background: url('../../images/integStoresSelect.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+ }
+ .my-credit-icon-off{
+
+     background: url('../../images/mall.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+
+
+ }
+ /*加盟店*/
+
+ .my-napaStore-icon-on{
+     background: url('../../images/napaStoresSelected.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+ }
+ .my-napaStore-icon-off{
+
+     background: url('../../images/napaStores.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+
+
+ }
+ .my-personal-icon-on{
+     background: url('../../images/personSelected.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+ }
+ .my-personal-icon-off{
+
+     background: url('../../images/person.png');
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+
+
+ }
+div.tabs{
+    background:white;
+    display: flex;
+    height: 5rem;
+
+}
+ div a.tab-item{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+
+ }
+a.tab-item-active{
+    height:5rem;
+    background: #E60012;
+    color:white;
+
+}

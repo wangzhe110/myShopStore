@@ -7,7 +7,7 @@ angular.module('myApp.credit',['ionic']).config(['$stateProvider',function ($sta
         url:'/credit',
         views:{
 
-            'credit':{
+            'tabs-credit':{
                 templateUrl:'creditStore.html',
                 controller:'creditController'
             }
