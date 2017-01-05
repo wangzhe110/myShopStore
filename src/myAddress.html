@@ -1,0 +1,40 @@
+<ion-view>
+
+    <ion-content style="background: #eee">
+        <div class="address_card">
+            <div class="address_nameAndTel">
+                 <span>马竹婷</span>
+                 <span>18234135612</span>
+            </div>
+            <div class="address_detail">
+                <span>北京市朝阳区九乡10号清麦时代创新园A110</span>
+            </div>
+            <div class="address_bottom">
+                <div class="address_bottomLeft">
+                    <span class="tubiao" ng-click="address.changeIconGray()" ng-if="address.tubiao=='未选中'"></span>
+                    <span class="tubiao1" ng-click="address.changeIconRed()" ng-if="address.tubiao=='选中'"></span>
+                    <span>默认地址</span>
+                </div>
+                <div class="address_bottomRight">
+                     <span class="address_edit">
+
+                     </span>
+                    <span >
+                           编辑地址
+                     </span>
+                    <span class="address_delete">
+
+                     </span>
+                    <span >
+                           删除
+                     </span>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+
+    <ion-footer-bar id="address_footBar">
+          <span>新增地址</span>
+    </ion-footer-bar>
+</ion-view>

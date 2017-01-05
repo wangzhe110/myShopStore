@@ -11,9 +11,7 @@
         height: 24rem;
         width: 100%;
     }
-    /*.view-container{*/
-    /*width: 48rem;*/
-    /*}*/
+
 
 }
 html{
@@ -21,29 +19,47 @@ html{
 }
 .topCarousel{
     position: relative;
-
-    /*width: calc(100% + 20px);*/
+   height:20rem;
+    background-color: rgba(200,200,200,.5);
     width: 100%;
 
 }
+
 .topCarousel .slider-pager{
-    text-align: right;
-    height: 3rem;
+    display: flex;
+    position: absolute;
+    left: 5rem;
+    bottom:3rem;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+
 }
 
 .topCarousel .slider-pager-page{
-    width: .1rem;
+    font-size: 1rem;
+    color: white;
+    opacity: 1;
+
 }
-.topCarousel .ion-record{
-    position: relative;
-    bottom: -2rem;
-    right: 2rem;
-    display: block;
-    width: .5rem;
-    height: .5rem;
-    border-radius: 50%;
-    background-color: white;
+.topCarousel .slider-pager-page.active{
+    font-size: 1rem;
+    color: red;
+
 }
+/*.topCarousel .ion-record{*/
+    /*position: relative;*/
+    /*bottom: -2rem;*/
+    /*right: 2rem;*/
+    /*display: block;*/
+    /*width: .5rem;*/
+    /*height: .5rem;*/
+    /*border-radius: 50%;*/
+    /*background-color: white;*/
+/*}*/
 .slideBottomDiv{
     position: absolute;
     padding-left: 1.5rem;
@@ -65,6 +81,6 @@ html{
     width: 300px;
     border-radius: 6px;
 }
-/*.button.button-dark.button-clear{*/
-/*border-right: solid 1px #d1d3d6;*/
-/*}*/
+.button.button-dark.button-clear{
+border-right: solid 1px #d1d3d6;
+}

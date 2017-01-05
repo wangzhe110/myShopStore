@@ -45,6 +45,7 @@ angular.module('myApp.personal',['ionic']).config(['$stateProvider',function ($s
     function showOrder() {
         $state.go('tabs.order');
         console.log('进入我的订单页面');
+
     }
     function showCollect() {
         console.log('进入我的收藏页面');
@@ -53,6 +54,7 @@ angular.module('myApp.personal',['ionic']).config(['$stateProvider',function ($s
     }
     function showCredit() {
         console.log('进入我的积分页面');
+        $state.go('tabs.myCredit');
 
     }
     function showShoppingCar() {
@@ -62,12 +64,12 @@ angular.module('myApp.personal',['ionic']).config(['$stateProvider',function ($s
     }
     function showAddress() {
         console.log('进入收货地址页面');
-
+        $state.go('tabs.myAddress');
     }
 
     function showPay() {
         console.log('进入我的支付记录页面');
-
+        $state.go('tabs.payHistory');
     }
     function showAttention() {
         console.log('进入关注页面');

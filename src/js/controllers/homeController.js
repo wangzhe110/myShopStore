@@ -13,7 +13,7 @@ angular.module('myApp.homeC',['ionic']).config(['$stateProvider',function ($stat
         }
     });
 
-}]).controller('homeController',['$scope','HttpFactory',function ($scope,HttpFactory,RongCustomerService) {
+}]).controller('homeController',['$scope','$state','HttpFactory',function ($scope,$state,HttpFactory) {
 
 
 
@@ -22,17 +22,22 @@ angular.module('myApp.homeC',['ionic']).config(['$stateProvider',function ($stat
         //搜索
         search:search,
        slideArray:[],
-       goodsListArray:[]
-
+       goodsListArray:[],
+       goToDetail:goToDetail
 
 
    };
+
      function search() {
           console.log('进行查询');
      }
+     function goToDetail() {
+            $state.go('tabs.homeDetail')
+     }
     var url = "http://114.112.94.166/sunny/wap/api/getGoods";
     HttpFactory.getData(url).then(function (result) {
-
+        $scope.home.slideArray = result.bannerData;
+        console.log($scope.home.slideArray);
         for(var i=0;i<result.goodsData.length;i++){
             result.goodsData[i].goods_introduction = "http://114.112.94.166"+result.goodsData[i].goods_introduction
 

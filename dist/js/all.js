@@ -1,7 +1,7 @@
 /**
  * Created by lx on 2016/12/26.
  */
-angular.module('myApp',['ionic','myApp.tabs','myApp.homeC','myApp.national','myApp.credit','myApp.personal','myApp.collection','myApp.order','myApp.shopCarHome','myApp.slideBox','myApp.httpFactory','RongWebIMWidget']).config(['$urlRouterProvider',function ($urlRouterProvider) {
+angular.module('myApp',['ionic','myApp.tabs','myApp.homeC','myApp.homeDetail','myApp.national','myApp.credit','myApp.personal','myApp.collection','myApp.order','myApp.shopCarHome','myApp.slideBox','myApp.myCredit','myApp.payHistory','myApp.myAddress','myApp.httpFactory','RongWebIMWidget']).config(['$urlRouterProvider',function ($urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/tabs/home');
 
@@ -150,7 +150,7 @@ angular.module('myApp.homeC',['ionic']).config(['$stateProvider',function ($stat
         }
     });
 
-}]).controller('homeController',['$scope','HttpFactory',function ($scope,HttpFactory,RongCustomerService) {
+}]).controller('homeController',['$scope','$state','HttpFactory',function ($scope,$state,HttpFactory) {
 
 
 
@@ -159,17 +159,22 @@ angular.module('myApp.homeC',['ionic']).config(['$stateProvider',function ($stat
         //搜索
         search:search,
        slideArray:[],
-       goodsListArray:[]
-
+       goodsListArray:[],
+       goToDetail:goToDetail
 
 
    };
+
      function search() {
           console.log('进行查询');
      }
+     function goToDetail() {
+            $state.go('tabs.homeDetail')
+     }
     var url = "http://114.112.94.166/sunny/wap/api/getGoods";
     HttpFactory.getData(url).then(function (result) {
-
+        $scope.home.slideArray = result.bannerData;
+        console.log($scope.home.slideArray);
         for(var i=0;i<result.goodsData.length;i++){
             result.goodsData[i].goods_introduction = "http://114.112.94.166"+result.goodsData[i].goods_introduction
 
@@ -179,6 +184,89 @@ angular.module('myApp.homeC',['ionic']).config(['$stateProvider',function ($stat
         console.log( $scope.home.goodsListArray);
 
     });
+
+}]);
+/**
+ * Created by lx on 2017/1/4.
+ */
+/**
+ * Created by lx on 2016/12/26.
+ */
+angular.module('myApp.homeDetail',['ionic']).config(['$stateProvider',function ($stateProvider) {
+
+    $stateProvider.state('tabs.homeDetail',{
+        url:'/homeDetail',
+        views:{
+            'tabs-home':{
+                templateUrl:'homeDetail.html',
+                controller:'homeDetailController'
+            }
+        }
+    });
+
+}]).controller('homeDetailController',['$scope','HttpFactory',function ($scope,HttpFactory,RongCustomerService) {
+
+
+
+}]);
+
+/**
+ * Created by lx on 2017/1/4.
+ */
+angular.module('myApp.myAddress',['ionic']).config(['$stateProvider',function ($stateProvider) {
+    $stateProvider.state('tabs.myAddress',{
+
+        url:'/myAddress',
+        views:{
+            'tabs-personal':{
+                templateUrl:'myAddress.html',
+                controller:'myAddressController'
+            }
+        }
+    })
+}]).controller('myAddressController',['$scope','$ionicTabsDelegate',function ($scope,$ionicTabsDelegate) {
+
+    $scope.$on('$ionicView.beforeEnter',function () {
+        $ionicTabsDelegate.showBar(false);
+    });
+        $scope.address ={
+            changeIconGray:changeIconGray,
+            changeIconRed:changeIconRed,
+           tubiao:'未选中'
+        };
+
+       function changeIconGray(e) {
+           $scope.address.tubiao = '选中';
+
+           }
+      function changeIconRed(e) {
+
+          $scope.address.tubiao = '未选中';
+
+        }
+
+
+
+
+}]);
+/**
+ * Created by lx on 2017/1/4.
+ */
+angular.module('myApp.myCredit',['ionic']).config(['$stateProvider',function ($stateProvider) {
+      $stateProvider.state('tabs.myCredit',{
+
+           url:'/myCredit',
+            views:{
+               'tabs-personal':{
+                   templateUrl:'myCredit.html',
+                   controller:'myCreditController'
+               }
+            }
+      })
+}]).controller('myCreditController',['$scope',function ($scope) {
+
+                     
+
 
 }]);
 /**
@@ -234,6 +322,37 @@ angular.module('myApp.order',[]).config(['$stateProvider',function ($stateProvid
 
 }]);
 /**
+ * Created by lx on 2017/1/4.
+ */
+/**
+ * Created by lx on 2016/12/28.
+ */
+angular.module('myApp.payHistory',[]).config(['$stateProvider',function ($stateProvider) {
+
+    $stateProvider.state('tabs.payHistory',{
+
+        url:'/payHistory',
+        views:{
+            'tabs-personal':{
+
+                templateUrl:'payHistory.html',
+                controller:'payHistoryController'
+            }
+        }
+
+    })
+
+
+}]).controller('payHistoryController',['$scope','$ionicTabsDelegate',function ($scope,$ionicTabsDelegate) {
+
+    $scope.$on('$ionicView.beforeEnter',function () {
+        $ionicTabsDelegate.showBar(false);
+    });
+
+
+
+}]);
+/**
  * Created by lx on 2016/12/26.
  */
 angular.module('myApp.personal',['ionic']).config(['$stateProvider',function ($stateProvider) {
@@ -280,6 +399,7 @@ angular.module('myApp.personal',['ionic']).config(['$stateProvider',function ($s
     function showOrder() {
         $state.go('tabs.order');
         console.log('进入我的订单页面');
+
     }
     function showCollect() {
         console.log('进入我的收藏页面');
@@ -288,6 +408,7 @@ angular.module('myApp.personal',['ionic']).config(['$stateProvider',function ($s
     }
     function showCredit() {
         console.log('进入我的积分页面');
+        $state.go('tabs.myCredit');
 
     }
     function showShoppingCar() {
@@ -297,12 +418,12 @@ angular.module('myApp.personal',['ionic']).config(['$stateProvider',function ($s
     }
     function showAddress() {
         console.log('进入收货地址页面');
-
+        $state.go('tabs.myAddress');
     }
 
     function showPay() {
         console.log('进入我的支付记录页面');
-
+        $state.go('tabs.payHistory');
     }
     function showAttention() {
         console.log('进入关注页面');
@@ -507,51 +628,13 @@ angular.module('myApp.slideBox',[]).directive('mySlideBox',[function () {
                 if (newVal && newVal.length) {
 
                     $scope.isShowSlideBox = true;
-                    // }
-                    /*
-                     * 两种方案解决轮播不能立刻显示或者错位的bug 改bug 由于 ng-repeat和slideBox 的特性造成
-                     * 完美的解决方案是使用添加ng-if 另一种使用update和loop
-                     * */
-                    // $ionicSlideBoxDelegate.$getByHandle('topCarouselSlideBox').update();
-
-                    // $ionicSlideBoxDelegate.$getByHandle('topCarouselSlideBox').loop(true);
-                    // if (oldVal && oldVal.length && oldVal.length != newVal.length) {
-                    //     $scope.isShowSlideBox = false;
-                    //     $timeout(function () {
-                    //         $scope.isShowSlideBox = true;
-                    //     }, 10)
-                    // } else {
-                    //     $scope.isShowSlideBox = true;
-                    //
-                    // }
-
-                        lastSpan.innerText = ($scope.sourceArray[0]).title;
-
-
 
                 }
-                // //页面加载的出来的时候禁止滑动
-                // $ionicSlideBoxDelegate.$getByHandle('mainSlideBox').enableSlide(false);
-                // //拖拽轮播图的时候也要禁止 底层的slideBox滑动
-                // $scope.drag = function (event) {
-                //     $ionicSlideBoxDelegate.$getByHandle('mainSlideBox').enableSlide(false);
-                //     // console.log('拖拽轮播图')
-                //   event.stopPropagation();
-                // };
 
-                $scope.slideHasChanged = function (index) {
-                    lastSpan.innerText = $scope.sourceArray[index].title;
-                    if($scope.sourceArray[index].title){
-                        lastSpan.innerText = ($scope.sourceArray[index]).title;
-                    }else{
-                        lastSpan.innerText = ($scope.sourceArray[index]).roomName;
-                    }
-
-                }
             });
 
         }],
-        replace:true,
+        replace:true
 
     };
 }]);
