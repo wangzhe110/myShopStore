@@ -218,6 +218,9 @@ input.homeBar_Input{
 /*单个商品盒子*/
 .home_goodsContentBox{
     width: 13.34rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /*商品内容*/
 .home_goodsContent{
@@ -243,7 +246,13 @@ input.homeBar_Input{
     text-decoration: line-through;
     color: #999
 }
-
+.home_goodsContentBoxRight{
+    width:2rem;
+    height:100%;
+    background-color: #00a0ff;
+    background: url('../../images/shopIcon.png') no-repeat;
+    background-size: 100% 100%;
+}
 
 div#rong-widget-minbtn{
 

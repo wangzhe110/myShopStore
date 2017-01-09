@@ -22,12 +22,12 @@
 
         <div  class="row-wrap row home_goodsBox" >
 
-            <div ng-repeat="goods in home.goodsListArray" class="home_goods" ng-click="home.goToDetail($index)">
+            <div ng-repeat="goods in home.goodsListArray" class="home_goods" >
 
-                <img ng-src="{{goods.goods_introduction}}" alt="">
+                <img ng-src="{{goods.goods_introduction}}" alt="" ng-click="home.goToDetail($index)">
 
                 <span>{{goods.goods_name|limitTo:18}}...</span>
-                <div  class="home_goodsContentBox">
+                <div  class="home_goodsContentBox" ng-click="home.showshopCarModal()">
 
                     <div class="home_goodsContent">
 
@@ -35,7 +35,9 @@
                         <span >￥68</span>
 
                     </div>
+                     <div class="home_goodsContentBoxRight" >
 
+                     </div>
                 </div>
 
 

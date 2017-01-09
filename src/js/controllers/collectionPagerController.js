@@ -12,7 +12,7 @@ angular.module('myApp.collection',[]).config(['$stateProvider',function ($stateP
         }
 
       });
-}]).controller('collectionPagerController',['$scope',"$ionicTabsDelegate",'$ionicModal','$ionicPopup',function ($scope,$ionicTabsDelegate,$ionicModal,$ionicPopup) {
+}]).controller('collectionPagerController',['$scope',"$ionicTabsDelegate",'$ionicModal','$ionicPopup','HttpFactory',function ($scope,$ionicTabsDelegate,$ionicModal,$ionicPopup,HttpFactory) {
 
     $scope.$on('$ionicView.beforeEnter',function () {
         $ionicTabsDelegate.showBar(false);
@@ -44,9 +44,15 @@ angular.module('myApp.collection',[]).config(['$stateProvider',function ($stateP
         //增加商品数量
         add:add
 
-
-
     };
+  var myCollect_sessid = '?sessid=107';
+    var url = 'http://114.112.94.166/sunny/wap/api/ucollection'+myCollect_sessid;
+
+    HttpFactory.getData(url).then(function (result) {
+        console.log(result);
+    },function (err) {
+        console.log(err);
+    });
 
 
     function deleteItem(index) {
