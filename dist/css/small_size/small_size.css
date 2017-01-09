@@ -1,6 +1,129 @@
 
 /*首页的样式*/
 /*导航栏*/
+.credit_bar{
+    height:4.6rem;
+    background-color:#f9fdfc;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.creditBar_logoDiv{
+
+    width:4.08rem;
+    height:2.45rem;
+    background:url('../../images/logo.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+input.creditBar_Input{
+    padding-left: 1.36rem;
+
+    display: inline-block;
+    width:22.3rem;
+    height:2.55rem;
+    background-color:#f9fdfc;
+    border: .1rem solid #b5b5b5;
+    border-radius:1.06rem /1.06rem;
+}
+.creditBar_search{
+    width:1.31rem;
+    height:1.55rem;
+    background:url(../../images/search.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right:1rem;
+    top:.75rem;
+
+}
+.creditBar_sideList{
+    width:2.2rem;
+    height:1.4rem;
+    background:url(../../images/sidelist.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.credit_rec{
+    width:15.8rem;
+    height:2rem;
+
+    background: url('../../images/Recommend.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 1.1rem auto;
+}
+
+/*商品内容的盒子*/
+.credit_goodsBox{
+    width: 32.39rem;
+    margin: 0 auto;
+}
+
+.credit_goods{
+
+    background-color: white;
+    width:14.7rem;
+    height:15.7rem;
+    margin-bottom:.55rem;
+    margin-right:.42rem;
+    margin-left:.42rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.credit_goods>img{
+    width: 14.7rem;
+    height:9.3rem;
+
+}
+.credit_goods>span{
+    width: 13.34rem;
+    height:2.26rem;
+    font-size: 1.1rem;
+    color:#333;
+    line-height: 1.1rem;
+    overflow:hidden;
+    font-family: "Microsoft Yahei";
+
+
+
+}
+/*单个商品盒子*/
+.credit_goodsContentBox{
+    width: 13.34rem;
+}
+/*商品内容*/
+.credit_goodsContent{
+
+    width:4.71rem;
+    height:1.05rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.credit_goodsContent>span:nth-child(1){
+    width:4.9rem;
+    height:1.05rem;
+    line-height: 1.05rem;
+    font-size: 1.05rem;
+    color: #e60012
+}
+.credit_goodsContent>span:nth-child(2){
+    width:3rem;
+    height:1rem;
+    line-height: 1.05rem;
+    font-size: 0.85rem;
+    text-decoration: line-through;
+    color: #999
+}
+
+
+/*首页的样式*/
+/*导航栏*/
 .home_bar{
     height:4.6rem;
     background-color:#f9fdfc;

@@ -35,7 +35,7 @@ angular.module('myApp.shopCarHome',['ionic']).config(['$stateProvider',function 
 
         if ($scope.shopCarHome.hasClassOne == '选中') {
             $scope.shopCarHome.hasClassOne = '';
-            console.log('取消选中')
+            console.log('取消选中');
             $scope.shopCarHome.hasClass='';
         } else {
             $scope.shopCarHome.hasClassOne = '选中';

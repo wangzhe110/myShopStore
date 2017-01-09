@@ -132,8 +132,45 @@ angular.module('myApp.credit',['ionic']).config(['$stateProvider',function ($sta
     });
 
 
-}]).controller('creditController',['$state',function ($state) {
+}]).controller('creditController',['$scope',"$ionicTabsDelegate",'HttpFactory',function ($scope,$ionicTabsDelegate,HttpFactory) {
 
+
+
+    $scope.$on('$ionicView.beforeEnter',function () {
+        $ionicTabsDelegate.showBar(true);
+    });
+
+    $scope.credit = {
+        //搜索
+        search:search,
+        slideArray:[],
+        goodsListArray:[],
+        goToDetail:goToDetail
+
+
+    };
+
+    function search() {
+        console.log('进行查询');
+    }
+    function goToDetail(index) {
+        var  goodsDetail = $scope.home.goodsListArray[index];
+
+        $state.go('tabs.creditDetail',{goodsDetail:goodsDetail.goods_id});
+    }
+    var url = "http://114.112.94.166/sunny/wap/api/getGoods?integral=1";
+    HttpFactory.getData(url).then(function (result) {
+        $scope.credit.slideArray = result.bannerData;
+        console.log($scope.credit.slideArray);
+        for(var i=0;i<result.goodsData.length;i++){
+            result.goodsData[i].goods_introduction = "http://114.112.94.166"+result.goodsData[i].goods_introduction
+
+        }
+
+        $scope.credit.goodsListArray = result.goodsData;
+
+
+    });
 }]);
 /**
  * Created by lx on 2016/12/26.
@@ -150,10 +187,12 @@ angular.module('myApp.homeC',['ionic']).config(['$stateProvider',function ($stat
         }
     });
 
-}]).controller('homeController',['$scope','$state','HttpFactory',function ($scope,$state,HttpFactory) {
+}]).controller('homeController',['$scope','$state','$ionicTabsDelegate','HttpFactory',function ($scope,$state,$ionicTabsDelegate,HttpFactory) {
 
 
-
+    $scope.$on('$ionicView.beforeEnter',function () {
+        $ionicTabsDelegate.showBar(true);
+    });
 
    $scope.home = {
         //搜索
@@ -168,8 +207,10 @@ angular.module('myApp.homeC',['ionic']).config(['$stateProvider',function ($stat
      function search() {
           console.log('进行查询');
      }
-     function goToDetail() {
-            $state.go('tabs.homeDetail')
+     function goToDetail(index) {
+            var  goodsDetail = $scope.home.goodsListArray[index];
+
+            $state.go('tabs.homeDetail',{goodsDetail:goodsDetail.goods_id});
      }
     var url = "http://114.112.94.166/sunny/wap/api/getGoods";
     HttpFactory.getData(url).then(function (result) {
@@ -181,7 +222,7 @@ angular.module('myApp.homeC',['ionic']).config(['$stateProvider',function ($stat
         }
 
         $scope.home.goodsListArray = result.goodsData;
-        console.log( $scope.home.goodsListArray);
+
 
     });
 
@@ -196,6 +237,7 @@ angular.module('myApp.homeDetail',['ionic']).config(['$stateProvider',function (
 
     $stateProvider.state('tabs.homeDetail',{
         url:'/homeDetail',
+        params:{'goodsDetail':'发生未知错误'},
         views:{
             'tabs-home':{
                 templateUrl:'homeDetail.html',
@@ -204,14 +246,157 @@ angular.module('myApp.homeDetail',['ionic']).config(['$stateProvider',function (
         }
     });
 
-}]).controller('homeDetailController',['$scope','HttpFactory',function ($scope,HttpFactory,RongCustomerService) {
+}]).controller('homeDetailController',['$scope','$state','$stateParams','$ionicTabsDelegate','HttpFactory','$ionicModal',function ($scope,$state,$stateParams,$ionicTabsDelegate,HttpFactory,$ionicModal) {
+   $scope.homeDetail={
+       //轮播图
+       slideArray:[],
+       collect:collect,
+       selected:true,
+       showShopCarModal:showShopCarModal,
+       navDetailName:'商品详情',
+       //进入商品详情页面
+       showGoodsDetail:showGoodsDetail,
+       //进入商品参数页面
+       showGoodsArgument:showGoodsArgument,
+       //进入评价页面
+       showGoodsJudge:showGoodsJudge,
+       //回到首页
+       goToHomePager:goToHomePager,
+       goToShopCarHome:goToShopCarHome
+   };
 
+
+    $scope.$on('$ionicView.beforeEnter',function () {
+        $ionicTabsDelegate.showBar(false);
+    });
+
+    console.log($stateParams.goodsDetail);
+    (function () {
+        var params = {
+            id: $stateParams.goodsDetail
+        };
+        console.log(params);
+        var url ='http://114.112.94.166/sunny/wap/api/getGoods';
+        HttpFactory.getData(url,params).then(function (result) {
+            console.log(result);
+            //轮播图ds
+            // $scope.homeDetail.slideArray=result.bannerData;
+            // $scope.homeDetail.goodsName=result.bannerData;
+
+        }).then(function (err) {
+            console.log(err);
+        });
+
+    }());
+
+
+
+
+
+
+    //点击星星 让物品收藏
+    function collect(e) {
+        $scope.homeDetailselected =!$scope.homeDetailselected;
+        var testDiv = angular.element(e.currentTarget);
+        var changeSpan = angular.element(testDiv.children()[0]);
+        if($scope.homeDetailselected){
+            changeSpan.removeClass('homeDetail_titleRightIon').addClass('homeDetail_titleRightIonChanged')
+        }else{
+            changeSpan.removeClass  ('homeDetail_titleRightIonChanged').addClass('homeDetail_titleRightIon')
+        }
+
+    }
+
+    //进入商品详情页面
+    function showGoodsDetail(e) {
+        $scope.homeDetail.navDetailName='商品详情';
+        var targetDiv = angular.element(e.currentTarget).children();
+        goodetailPagerStyle();
+        targetDiv.css({'border-bottom':'.1rem solid #e80516','color':'#e80516'});
+
+
+    }
+
+    //进入商品参数页面
+    function showGoodsArgument(e) {
+        $scope.homeDetail.navDetailName='商品参数';
+        var targetDiv = angular.element(e.currentTarget).children();
+        goodetailPagerStyle();
+        targetDiv.css({'border-bottom':'.1rem solid #e80516','color':'#e80516'});
+    }
+
+    //进入 评价页面
+    function showGoodsJudge(e) {
+        $scope.homeDetail.navDetailName='评价';
+        var targetDiv = angular.element(e.currentTarget).children();
+        goodetailPagerStyle();
+        targetDiv.css({'border-bottom':'.1rem solid #e80516','color':'#e80516'});
+    }
+
+    //商品介绍 所有的style初始化
+    function goodetailPagerStyle (){
+        var parentDiv = angular.element(document.getElementsByClassName('homeDetail_goodsNav'));
+        var  eachDiv = parentDiv.children();
+        for(var i =0;i<eachDiv.length;i++){
+            var targetDiv = angular.element(eachDiv[i]).children();
+            targetDiv.css({'border-bottom':'.1rem solid transparent','color':'#666'});
+
+        }
+
+    }
+
+    function goToHomePager() {
+        $state.go('tabs.home');
+
+    }
+    function goToShopCarHome() {
+        $state.go('tabs.shopCarHome');
+        console.log('进入购物车页面');
+    }
+
+//    点击数量弹出窗口
+    function showShopCarModal() {
+        console.log('弹出购物车模态窗口');
+        showShopCar();
+        // $scope.modal.show();
+    }
+
+    //  购物车模态窗口
+    function reduce() {
+        if($scope.collect.val>1){
+            $scope.collect.val--;
+        }
+        //让最少为一件
+    }
+    function  add () {
+        $scope.collect.val ++;
+    }
+
+
+    function showShopCar() {
+        $scope.modal.show();
+    }
+
+    //加入购物车的模态窗口
+    $ionicModal.fromTemplateUrl('shopCar_Modal.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+    }).then(function(modal) {
+        $scope.modal = modal;
+    });
+
+
+    //当我们用到模型时，清除它！
+    $scope.$on('$destroy', function() {
+        $scope.modal.remove();
+    });
 
 
 }]);
 
 /**
  * Created by lx on 2017/1/4.
+ * 收货地址页面
  */
 angular.module('myApp.myAddress',['ionic']).config(['$stateProvider',function ($stateProvider) {
     $stateProvider.state('tabs.myAddress',{
@@ -251,6 +436,7 @@ angular.module('myApp.myAddress',['ionic']).config(['$stateProvider',function ($
 }]);
 /**
  * Created by lx on 2017/1/4.
+ * 个人中心我的积分页面
  */
 angular.module('myApp.myCredit',['ionic']).config(['$stateProvider',function ($stateProvider) {
       $stateProvider.state('tabs.myCredit',{
@@ -263,14 +449,26 @@ angular.module('myApp.myCredit',['ionic']).config(['$stateProvider',function ($s
                }
             }
       })
-}]).controller('myCreditController',['$scope',function ($scope) {
+}]).controller('myCreditController',['$scope','HttpFactory','$ionicTabsDelegate',function ($scope,HttpFactory,$ionicTabsDelegate) {
 
-                     
+        $scope.$on('$ionicView.beforeEnter',function () {
+            $ionicTabsDelegate.showBar(false);
+        });
+
+    //
+    // var url = 'http://114.112.94.166/sunny/wap/api/uintegral';
+    // HttpFactory.getData(url).then(function (result) {
+    //     console.log(result);
+    // },function (err) {
+    //     console.log(err);
+    // });
 
 
 }]);
 /**
  * Created by lx on 2016/12/26.
+ * 加盟店页面
+ *
  */
 angular.module('myApp.national',['ionic']).config(['$stateProvider',function ($stateProvider) {
 
@@ -293,6 +491,7 @@ angular.module('myApp.national',['ionic']).config(['$stateProvider',function ($s
 }]);
 /**
  * Created by lx on 2016/12/28.
+ * 订单详情页面
  */
 angular.module('myApp.order',[]).config(['$stateProvider',function ($stateProvider) {
 
@@ -310,14 +509,15 @@ angular.module('myApp.order',[]).config(['$stateProvider',function ($stateProvid
        })
 
 
-}]).controller('orderController',['$scope','$ionicTabsDelegate',function ($scope,$ionicTabsDelegate) {
+}]).controller('orderController',['$scope','HttpFactory','$ionicTabsDelegate',function ($scope,HttpFactory,$ionicTabsDelegate) {
 
     $scope.$on('$ionicView.beforeEnter',function () {
     $ionicTabsDelegate.showBar(false);
     });
      $scope.order ={
           goodsClass:'待付款'
-      }
+      };
+
 
 
 }]);
@@ -343,12 +543,11 @@ angular.module('myApp.payHistory',[]).config(['$stateProvider',function ($stateP
     })
 
 
-}]).controller('payHistoryController',['$scope','$ionicTabsDelegate',function ($scope,$ionicTabsDelegate) {
+}]).controller('payHistoryController',['$scope','HttpFactory','$ionicTabsDelegate',function ($scope,HttpFactory,$ionicTabsDelegate) {
 
     $scope.$on('$ionicView.beforeEnter',function () {
         $ionicTabsDelegate.showBar(false);
     });
-
 
 
 }]);
@@ -466,7 +665,7 @@ angular.module('myApp.shopCarHome',['ionic']).config(['$stateProvider',function 
 
         if ($scope.shopCarHome.hasClassOne == '选中') {
             $scope.shopCarHome.hasClassOne = '';
-            console.log('取消选中')
+            console.log('取消选中');
             $scope.shopCarHome.hasClass='';
         } else {
             $scope.shopCarHome.hasClassOne = '选中';
@@ -592,16 +791,18 @@ angular.module('myApp.tabs',['ionic']).config(['$stateProvider',function ($state
  */
 angular.module('myApp.httpFactory',[]).factory('HttpFactory',['$http','$q',function ($http,$q) {
     return {
-        getData:function (url,type) {
+        getData:function (url,params,type) {
             console.log(url);
             if (url){
                 var promise = $q.defer();
                 // url = "http://192.168.0.100:3000/?myUrl=" + encodeURIComponent(url);
                 // url =  url;
                 type = type ? type:"GET";
+                params = params ? params:{};
                 $http({
                     url:url,
                     method:type,
+                    params:params,
                     timeout:20000
                 }).then(function (result) {
                   promise.resolve(result.data);

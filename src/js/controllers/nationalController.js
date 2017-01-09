@@ -1,5 +1,7 @@
 /**
  * Created by lx on 2016/12/26.
+ * 加盟店页面
+ *
  */
 angular.module('myApp.national',['ionic']).config(['$stateProvider',function ($stateProvider) {
 

@@ -2,32 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="813c7003-9f74-4e3d-975f-180bec8d355c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/middle_size/myAddress.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/middle_size/myCredit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/middle_size/payHistory_middle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/homeDetail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/controllers/homeDetailController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/controllers/myAddress.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/controllers/myCreditController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/controllers/payHistoryController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/myAddress.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/myCredit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/payHistory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/middle_size/credit_middle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/middle_size/homeDetail_middle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/small_size/credit_small.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/creditStore.html" afterPath="$PROJECT_DIR$/dist/creditStore.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/middle_size/middle_size.css" afterPath="$PROJECT_DIR$/dist/css/middle_size/middle_size.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/middle_size/middle_size.min.css" afterPath="$PROJECT_DIR$/dist/css/middle_size/middle_size.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/small_size/small_size.css" afterPath="$PROJECT_DIR$/dist/css/small_size/small_size.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/small_size/small_size.min.css" afterPath="$PROJECT_DIR$/dist/css/small_size/small_size.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/home.html" afterPath="$PROJECT_DIR$/dist/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/homeDetail.html" afterPath="$PROJECT_DIR$/dist/homeDetail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/all.js" afterPath="$PROJECT_DIR$/dist/js/all.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/all.min.js" afterPath="$PROJECT_DIR$/dist/js/all.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/lib/css/ionic.min.css" afterPath="$PROJECT_DIR$/dist/lib/css/ionic.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/slideBox.html" afterPath="$PROJECT_DIR$/dist/slideBox.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/middle_size/slideBox_middle.css" afterPath="$PROJECT_DIR$/src/css/middle_size/slideBox_middle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/creditStore.html" afterPath="$PROJECT_DIR$/src/creditStore.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/middle_size/home_middle.css" afterPath="$PROJECT_DIR$/src/css/middle_size/home_middle.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/home.html" afterPath="$PROJECT_DIR$/src/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homeDetail.html" afterPath="$PROJECT_DIR$/src/homeDetail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/creditController.js" afterPath="$PROJECT_DIR$/src/js/controllers/creditController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/homeController.js" afterPath="$PROJECT_DIR$/src/js/controllers/homeController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/personalCenter.js" afterPath="$PROJECT_DIR$/src/js/controllers/personalCenter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/services/slideBox.js" afterPath="$PROJECT_DIR$/src/js/services/slideBox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/slideBox.html" afterPath="$PROJECT_DIR$/src/slideBox.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/homeDetailController.js" afterPath="$PROJECT_DIR$/src/js/controllers/homeDetailController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/myAddress.js" afterPath="$PROJECT_DIR$/src/js/controllers/myAddress.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/myCreditController.js" afterPath="$PROJECT_DIR$/src/js/controllers/myCreditController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/nationalController.js" afterPath="$PROJECT_DIR$/src/js/controllers/nationalController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/orderController.js" afterPath="$PROJECT_DIR$/src/js/controllers/orderController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/payHistoryController.js" afterPath="$PROJECT_DIR$/src/js/controllers/payHistoryController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/shopCarHomeController.js" afterPath="$PROJECT_DIR$/src/js/controllers/shopCarHomeController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/services/httpFactory.js" afterPath="$PROJECT_DIR$/src/js/services/httpFactory.js" />
     </list>
     <ignored path="myShopStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,21 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="homeDetail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/homeDetail.html">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homeDetailController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/controllers/homeDetailController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="-486">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,48 +64,60 @@
       <file leaf-file-name="homeController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/controllers/homeController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-396">
-              <caret line="15" column="100" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="100" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/home.html">
+      <file leaf-file-name="creditController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/controllers/creditController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="26" column="92" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
+            <state relative-caret-position="338">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myCredit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myCredit.html">
+      <file leaf-file-name="homeDetailController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/controllers/homeDetailController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="365">
+              <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personalCenter.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/controllers/personalCenter.js">
+      <file leaf-file-name="collectionPagerController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/controllers/collectionPagerController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            <state relative-caret-position="-216">
+              <caret line="69" column="15" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homeDetail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/homeDetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+              <folding>
+                <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopCarHomeController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/controllers/shopCarHomeController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="42" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -126,9 +129,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -138,24 +141,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/js/controllers/nationalController.js" />
-        <option value="$PROJECT_DIR$/src/js/service/slideBox.js" />
-        <option value="$PROJECT_DIR$/src/css/slideBox.css" />
-        <option value="$PROJECT_DIR$/src/css/middle_size/slideBox——middle.css" />
-        <option value="$PROJECT_DIR$/src/slide.html" />
-        <option value="$PROJECT_DIR$/src/css/middle_size/tabs.css" />
-        <option value="$PROJECT_DIR$/src/nationalStore.html" />
         <option value="$PROJECT_DIR$/src/css/middle_size/nationStore_middle.css" />
         <option value="$PROJECT_DIR$/src/css/middle_size/shopCard_Modal.css" />
         <option value="$PROJECT_DIR$/src/tabs.html" />
-        <option value="$PROJECT_DIR$/src/js/controllers/collectionPagerController.js" />
         <option value="$PROJECT_DIR$/src/css/middle_size/order.css" />
-        <option value="$PROJECT_DIR$/src/js/services/httpFactory.js" />
         <option value="$PROJECT_DIR$/src/css/middle_size/tabs_middle.css" />
-        <option value="$PROJECT_DIR$/src/js/controllers/orderController.js" />
         <option value="$PROJECT_DIR$/src/css/middle_size/orderHome_middle.css" />
         <option value="$PROJECT_DIR$/src/orderHome.html" />
-        <option value="$PROJECT_DIR$/src/css/middle_size/home_middle.css" />
         <option value="$PROJECT_DIR$/src/css/small_size/home_small.css" />
         <option value="$PROJECT_DIR$/src/css/max_size/home_max.css" />
         <option value="$PROJECT_DIR$/src/css/max_size/tabs_max.css" />
@@ -163,32 +155,43 @@
         <option value="$PROJECT_DIR$/src/js/controllers/tabsController.js" />
         <option value="$PROJECT_DIR$/src/css/middle_size/shopCarHome.css" />
         <option value="$PROJECT_DIR$/src/shoppingCarHome.html" />
-        <option value="$PROJECT_DIR$/src/js/controllers/shopCarHomeController.js" />
         <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/src/js/services/slideBox.js" />
         <option value="$PROJECT_DIR$/src/slideBox.html" />
         <option value="$PROJECT_DIR$/dist/lib/css/ionic.min.css" />
         <option value="$PROJECT_DIR$/src/css/middle_size/slideBox_middle.css" />
         <option value="$PROJECT_DIR$/src/lib/myCredit.html" />
-        <option value="$PROJECT_DIR$/src/js/controllers/myCreditController.js" />
         <option value="$PROJECT_DIR$/src/myCredit.html" />
         <option value="$PROJECT_DIR$/src/css/middle_size/myCredit.css" />
         <option value="$PROJECT_DIR$/src/js/controllers/myAddress.html" />
         <option value="$PROJECT_DIR$/src/abs.ts" />
-        <option value="$PROJECT_DIR$/src/js/controllers/myAddress.js" />
         <option value="$PROJECT_DIR$/src/myAddress.html" />
         <option value="$PROJECT_DIR$/src/css/middle_size/myAddress.css" />
-        <option value="$PROJECT_DIR$/src/js/controllers/payHistoryController.js" />
         <option value="$PROJECT_DIR$/src/js/controllers/personalCenter.js" />
         <option value="$PROJECT_DIR$/src/css/middle_size/payHistory.css" />
         <option value="$PROJECT_DIR$/src/payHistory.html" />
         <option value="$PROJECT_DIR$/src/css/middle_size/payHistory_middle.css" />
-        <option value="$PROJECT_DIR$/src/homeDetail.html" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
         <option value="$PROJECT_DIR$/src/home.html" />
+        <option value="$PROJECT_DIR$/src/css/middle_size/homeDetail_middle.css" />
+        <option value="$PROJECT_DIR$/src/js/services/httpFactory.js" />
+        <option value="$PROJECT_DIR$/dist/creditStore.html" />
+        <option value="$PROJECT_DIR$/src/creditStore.html" />
+        <option value="$PROJECT_DIR$/dist/index.html" />
+        <option value="$PROJECT_DIR$/src/js/controllers/shopCarHomeController.js" />
+        <option value="$PROJECT_DIR$/src/js/controllers/payHistoryController.js" />
+        <option value="$PROJECT_DIR$/src/js/controllers/myCreditController.js" />
+        <option value="$PROJECT_DIR$/src/js/controllers/nationalController.js" />
+        <option value="$PROJECT_DIR$/src/js/controllers/orderController.js" />
+        <option value="$PROJECT_DIR$/src/js/controllers/myAddress.js" />
+        <option value="$PROJECT_DIR$/src/js/controllers/collectionPagerController.js" />
+        <option value="$PROJECT_DIR$/src/js/controllers/creditController.js" />
+        <option value="$PROJECT_DIR$/src/css/middle_size/credit_middle.css" />
+        <option value="$PROJECT_DIR$/src/css/middle_size/home_middle.css" />
+        <option value="$PROJECT_DIR$/src/css/small_size/credit_small.css" />
         <option value="$PROJECT_DIR$/src/js/controllers/homeController.js" />
         <option value="$PROJECT_DIR$/src/js/controllers/homeDetailController.js" />
+        <option value="$PROJECT_DIR$/src/homeDetail.html" />
       </list>
     </option>
   </component>
@@ -204,10 +207,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="14" />
-    <option name="width" value="1920" />
-    <option name="height" value="1036" />
+    <option name="x" value="172" />
+    <option name="y" value="237" />
+    <option name="width" value="1492" />
+    <option name="height" value="859" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -234,7 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -304,6 +306,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myShopStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myShopStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -318,42 +342,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myShopStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myShopStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="middle_size" />
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/xampp/htdocs/Comfortable97" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Comfortable97" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -365,8 +364,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lx\Documents\myShopStore\src\css\max_size" />
       <recent name="C:\Users\lx\Documents\myShopStore\src\css\small_size" />
+      <recent name="C:\Users\lx\Documents\myShopStore\src\css\max_size" />
       <recent name="C:\Users\lx\Documents\myShopStore\src" />
       <recent name="C:\Users\lx\Documents\myShopStore\dist" />
       <recent name="C:\Users\lx\Documents\myShopStore\src\js\controllers" />
@@ -460,24 +459,31 @@
       <workItem from="1483062184200" duration="16000" />
       <workItem from="1483063217422" duration="1250000" />
       <workItem from="1483407637466" duration="33199000" />
+      <workItem from="1483618748827" duration="1652000" />
+      <workItem from="1483620634025" duration="3881000" />
+      <workItem from="1483669573153" duration="589000" />
+      <workItem from="1483670255276" duration="4248000" />
+      <workItem from="1483751108632" duration="19319000" />
+      <workItem from="1483776767516" duration="2864000" />
+      <workItem from="1483864566400" duration="6007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126689000" />
+    <option name="totallyTimeSpent" value="165249000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="14" width="1920" height="1036" extended-state="0" />
-    <editor active="false" />
+    <frame x="172" y="237" width="1492" height="859" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20616366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2530949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27021042" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12258953" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -499,9 +505,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18634886" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12351029" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2081138" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13856691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853982" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -528,62 +534,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dist2/css/RongIMWidget.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dist2/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/max_size/collectionPager_max.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/testRongYUN/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/middle_size/personalCenter_middle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="196" column="18" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/services/httpFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/middle_size/orderHome_middle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orderHome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/max_size/tabs_max.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -602,13 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="133" column="18" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/small_size/home_small.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="117" column="25" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -634,33 +577,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/shopCarHomeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shoppingCarHome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/collectionPager.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="0" column="679" selection-start-line="0" selection-start-column="679" selection-end-line="0" selection-end-column="679" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/collectionPager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -676,17 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#ion-modal-view#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/collectionPagerController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="65" column="69" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-81">
           <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,15 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="230" selection-start-line="2" selection-start-column="230" selection-end-line="2" selection-end-column="230" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/middle_size/home_middle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,15 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5143">
           <caret line="22" column="42092" selection-start-line="22" selection-start-column="42092" selection-end-line="22" selection-end-column="42092" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/creditStore.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -734,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="5" column="93" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,23 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="0" column="958" selection-start-line="0" selection-start-column="958" selection-end-line="0" selection-end-column="958" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-19">
           <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,43 +644,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-111">
           <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/myCreditController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="17" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#37#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/abs.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/abs.ts" />
     <entry file="file://$PROJECT_DIR$/src/css/middle_size/myAddress.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/myAddress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#1#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -818,17 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/orderController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="24" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-567">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,19 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#ion-view#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/payHistoryController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,7 +680,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myCredit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -872,54 +694,221 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/homeController.js">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="15" column="100" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="100" />
-          <folding />
+        <state relative-caret-position="459">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="26" column="92" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeDetail.html">
+    <entry file="file://$PROJECT_DIR$/src/css/middle_size/homeDetail_middle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/homeDetailController.js">
+    <entry file="file://$PROJECT_DIR$/dist/creditStore.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#ion-header-bar#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/services/httpFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="59" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myCredit.html">
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/payHistoryController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="34" />
+        <state relative-caret-position="401">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="26" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/controllers/personalCenter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        <state relative-caret-position="567">
+          <caret line="19" column="115" selection-start-line="19" selection-start-column="115" selection-end-line="19" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/orderController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/nationalController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/myAddress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collectionPager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="0" column="958" selection-start-line="0" selection-start-column="958" selection-end-line="0" selection-end-column="958" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/myCreditController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/small_size/home_small.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="108" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="150" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/small_size/credit_small.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/middle_size/home_middle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/middle_size/credit_middle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/creditStore.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/creditController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/homeDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shoppingCarHome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/shopCarHomeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/homeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/homeDetailController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/collectionPagerController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="69" column="15" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
           <folding />
         </state>
       </provider>

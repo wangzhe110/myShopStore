@@ -1,5 +1,6 @@
 /**
  * Created by lx on 2016/12/28.
+ * 订单详情页面
  */
 angular.module('myApp.order',[]).config(['$stateProvider',function ($stateProvider) {
 
@@ -17,14 +18,15 @@ angular.module('myApp.order',[]).config(['$stateProvider',function ($stateProvid
        })
 
 
-}]).controller('orderController',['$scope','$ionicTabsDelegate',function ($scope,$ionicTabsDelegate) {
+}]).controller('orderController',['$scope','HttpFactory','$ionicTabsDelegate',function ($scope,HttpFactory,$ionicTabsDelegate) {
 
     $scope.$on('$ionicView.beforeEnter',function () {
     $ionicTabsDelegate.showBar(false);
     });
      $scope.order ={
           goodsClass:'待付款'
-      }
+      };
+
 
 
 }]);

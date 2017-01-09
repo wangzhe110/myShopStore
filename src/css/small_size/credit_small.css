@@ -1,7 +1,7 @@
 
 /*首页的样式*/
 /*导航栏*/
-.home_bar{
+.credit_bar{
     height:4.6rem;
     background-color:#f9fdfc;
     width:100%;
@@ -9,26 +9,26 @@
     align-items: center;
     justify-content: space-around;
 }
-.homeBar_logoDiv{
+.creditBar_logoDiv{
 
-    width:4.8rem;
+    width:4.08rem;
     height:2.45rem;
     background:url('../../images/logo.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-input.homeBar_Input{
-    padding-left: 1.6rem;
+input.creditBar_Input{
+    padding-left: 1.36rem;
 
     display: inline-block;
-    width:26.25rem;
+    width:22.3rem;
     height:2.55rem;
     background-color:#f9fdfc;
     border: .1rem solid #b5b5b5;
-    border-radius:1.25rem /1.25rem;
+    border-radius:1.06rem /1.06rem;
 }
-.homeBar_search{
-    width:1.55rem;
+.creditBar_search{
+    width:1.31rem;
     height:1.55rem;
     background:url(../../images/search.png);
     background-size: 100% 100%;
@@ -38,14 +38,14 @@ input.homeBar_Input{
     top:.75rem;
 
 }
-.homeBar_sideList{
+.creditBar_sideList{
     width:2.2rem;
     height:1.4rem;
     background:url(../../images/sidelist.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-.home_rec{
+.credit_rec{
     width:15.8rem;
     height:2rem;
 
@@ -56,32 +56,32 @@ input.homeBar_Input{
 }
 
 /*商品内容的盒子*/
-.home_goodsBox{
-    width:99%;
+.credit_goodsBox{
+    width: 32.39rem;
     margin: 0 auto;
-
 }
 
-.home_goods{
+.credit_goods{
 
     background-color: white;
-    width:48%;
+    width:14.7rem;
     height:15.7rem;
     margin-bottom:.55rem;
-    margin-left:.5rem;
+    margin-right:.42rem;
+    margin-left:.42rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
 }
-.home_goods>img{
-    width: 17.3rem;
+.credit_goods>img{
+    width: 14.7rem;
     height:9.3rem;
 
 }
-.home_goods>span{
-    width: 15.7rem;
+.credit_goods>span{
+    width: 13.34rem;
     height:2.26rem;
     font-size: 1.1rem;
     color:#333;
@@ -93,58 +93,30 @@ input.homeBar_Input{
 
 }
 /*单个商品盒子*/
-.home_goodsContentBox{
-    width: 15.7rem;
+.credit_goodsContentBox{
+    width: 13.34rem;
 }
 /*商品内容*/
-.home_goodsContent{
+.credit_goodsContent{
 
-    width:5.55rem;
+    width:4.71rem;
     height:1.05rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.home_goodsContent>span:nth-child(1){
-     width:2.45rem;
+.credit_goodsContent>span:nth-child(1){
+    width:4.9rem;
     height:1.05rem;
     line-height: 1.05rem;
     font-size: 1.05rem;
     color: #e60012
 }
-.home_goodsContent>span:nth-child(2){
-    width:2.5rem;height:0.85rem;
+.credit_goodsContent>span:nth-child(2){
+    width:3rem;
+    height:1rem;
     line-height: 1.05rem;
     font-size: 0.85rem;
     text-decoration: line-through;
     color: #999
-}
-
-
-div#rong-widget-minbtn{
-
-    width:10rem;
-    height:10rem;
-}
-div #rong-conversation{
-    left: 0;
-}
-.rongcloud-kefuBtnBox{
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-}
-.rongcloud-kefuBtn .rongcloud-people{
-    display: none;
-}
-/*#rong-conversation{*/
-    /*width: 300px;*/
-    /*height: 800px;*/
-    /*display: inline-block;*/
-/*}*/
-#rong-widget-minbtn{
-    background:url("../../images/service1.png") no-repeat  center/100%;
-}
-.rongcloud-kefuChat #header{
-    background: #E60012;
 }

@@ -1,9 +1,49 @@
-<ion-view view-title="积分商城">
+<ion-view view-title="首页">
+
+    <ion-header-bar class="credit_bar">
+        <div class="creditBar_logoDiv"></div>
+        <div style="position: relative">
+            <input type="text" class="creditBar_Input" placeholder="例: 大闸蟹">
+            <div class="creditBar_search" ng-click="credit.search()"></div>
+        </div>
+
+
+        <div class="creditBar_sideList" ng-click="toggleLeft()">
+
+        </div>
+    </ion-header-bar>
+
+    <ion-content  style="background-color: #eeeeee">
+
+
+        <my-slide-box source-array="credit.slideArray" class="slideBox"></my-slide-box>
+
+        <div class="credit_rec"></div>
+
+        <div  class="row-wrap row credit_goodsBox" >
+
+            <div ng-repeat="goods in credit.goodsListArray" class="credit_goods" ng-click="credit.goToDetail($index)">
+
+                <img ng-src="{{goods.goods_introduction}}" alt="">
+
+                <span>{{goods.goods_name|limitTo:18}}...</span>
+                <div  class="credit_goodsContentBox">
+
+                    <div class="credit_goodsContent">
+
+                        <span >￥48</span>
+                        <span >￥68</span>
+
+                    </div>
+
+                </div>
 
 
 
-    <ion-content>
-        <h1>积分商城页面</h1>
+            </div>
+
+        </div>
+
     </ion-content>
 
 

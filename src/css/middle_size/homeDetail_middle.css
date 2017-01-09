@@ -1,0 +1,287 @@
+.homeDetail_top{
+    width:100%;
+
+}
+
+
+/*商品介绍*/
+
+.homeDetail_introduce{
+    height:9.45rem;
+    width:100%;
+
+    margin-top:1rem ;
+}
+/*商品标题*/
+.homeDetail_title{
+     width:96%;
+     height:3.45rem;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.homeDetail_titleLeft{
+    width:28rem;
+    height:100%;
+    font-size: 1.5rem;
+}
+.homeDetail_titleRight{
+    width:2.5rem;
+    height:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.homeDetail_titleRightIon{
+    width:1.6rem;
+    height: 1.6rem;
+    background: url('../../images/collectStar.png') no-repeat;
+    background-size:  100% 100%;
+}
+
+.homeDetail_titleRightIonChanged{
+    width:1.6rem;
+    height: 1.6rem;
+    background: url('../../images/redStar.png') no-repeat;
+    background-size:  100% 100%;
+}
+.homeDetail_titleRight>span:nth-child(2){
+    width:2.2rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 1.1rem;
+
+}
+.homeDetail_introducePrice{
+    width:96%;
+    height:1.5rem;
+    display: flex;
+    margin: 1.2rem auto;
+    align-items: center;
+
+}
+.homeDetail_introducePrice>span:nth-child(1){
+        width:5.6rem;
+        height: 1.5rem;
+        font-size:1.2rem ;
+        line-height: 1.5rem;
+        color:#E60012 ;
+}
+.homeDetail_introducePrice>span:nth-child(2){
+    width:5.6rem;
+    height: .85rem;
+    font-size:1rem ;
+    line-height: 1rem;
+    margin-left: .4rem;
+    text-decoration: line-through;
+    color:#666 ;
+}
+
+.homeDetail_introducePriceBottom{
+    width:96%;
+    height: 1.2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.2rem;
+
+}
+
+
+
+.homeDetail_nums{
+    width:100%;
+    height:3.35rem;
+    background-color: white;
+
+}
+
+.homeDetail_numsContent{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #333;
+}
+.homeDetail_numsContent>span:nth-child(2){
+    width:.85rem;
+    height:1.45rem;
+    background: url('../../images/numsArrow.png') no-repeat;
+    background-size:  100% 100%;
+}
+
+.homeDetail_goodsNav{
+    width:100%;
+    height:3.6rem;
+    background: white;
+    margin:.9rem 0;
+    display: flex;
+
+
+}
+.homeDetail_goodsNav>div{
+    width: 33.3%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: .1rem solid #C3C1C1;
+
+
+}
+.homeDetail_goodsNav>div:nth-child(1)>span {
+    border-bottom:.1rem solid #e80516;
+    color:#e80516;
+}
+
+.homeDetail_goodsNav>div:nth-last-child(1){
+    border-right: 0;
+}
+.homeDetail_goodsNav>div>span{
+    width:70%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeDetail_goodsDetail{
+    width:100%;
+    height:67.35rem;
+    background: paleturquoise;
+}
+
+
+
+
+
+/*评价页面*/
+.homeDetail_goodsJudge{
+    width:100%;
+
+
+}
+
+.homeDetail_goodsJudgeCard{
+
+    width:100%;
+    height:18rem;
+    background: white;
+    margin-top: .95rem;
+    display: flex;
+
+    flex-direction: column;
+    align-content: center;
+}
+
+.homeDetail_cardTop{
+    margin: 0 auto;
+    height:7.05rem;
+    width:96%;
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+    background-color: palegoldenrod;
+}
+
+.homeDetail_cardTop>img{
+    width:4.5rem;
+    height: 4.5rem;
+    border-radius: 50% 50%;
+}
+.homeDetail_cardTop>div{
+    display: flex;
+    width:15.34rem;
+    justify-content: space-around;
+}
+
+.homeDetail_starIon{
+     width:2.15rem;
+     height:2.05rem;
+     background: url("../../images/grayStar.png") no-repeat;
+     background-size: 100% 100%;
+
+ }
+.homeDetail_starIonChanged{
+    width:2.15rem;
+    height:2.05rem;
+    background: url("../../images/commentfull.png") no-repeat;
+    background-size: 100% 100%;
+
+}
+.homeDetail_cardBottom{
+    margin: 0 auto;
+    height:9.5rem;
+    width:96%;
+    background-color: #eeeeee;
+}
+
+
+
+
+
+
+#homeDetail_bar{
+    height:5.15rem;
+    background: white;
+    padding: 0;
+
+}
+#homeDetail_bar>div{
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.homeDetailBar_firstDiv{
+    font-size:1.2rem;
+    justify-content: space-around;
+    width: 20%;
+}
+.homeDetailBar_firstDiv>span:nth-child(1){
+   width:1.7rem;
+    height: 1.9rem;
+    background: url('../../images/homepage.png') no-repeat;
+    background-size: 100% 100%;
+}
+.homeDetailBar_secondDiv{
+    font-size:1.2rem;
+    justify-content: space-around;
+    width: 20%;
+
+}
+.homeDetailBar_secondDiv>span:nth-child(1){
+    width:2rem;
+    height: 1.8rem;
+    background: url('../../images/shopCar.png') no-repeat;
+    background-size: 100% 100%;
+}
+.homeDetailBar_thirdDiv{
+    justify-content:center;
+    background: #f27f88;
+    color: white;
+    width: 30%;
+    font-size: 1.6rem;
+}
+.homeDetailBar_forthDiv{
+    width: 30%;
+    justify-content:center;
+    background: #e60012;
+    color: white;
+    font-size: 1.6rem;
+}
+.homeDetailBar_sellout{
+    width: 60%;
+    justify-content:center;
+    background: #666;
+    letter-spacing: 1rem;
+    font-size: 1.6rem;
+    color: white;
+}

@@ -20,12 +20,11 @@ angular.module('myApp.payHistory',[]).config(['$stateProvider',function ($stateP
     })
 
 
-}]).controller('payHistoryController',['$scope','$ionicTabsDelegate',function ($scope,$ionicTabsDelegate) {
+}]).controller('payHistoryController',['$scope','HttpFactory','$ionicTabsDelegate',function ($scope,HttpFactory,$ionicTabsDelegate) {
 
     $scope.$on('$ionicView.beforeEnter',function () {
         $ionicTabsDelegate.showBar(false);
     });
-
 
 
 }]);

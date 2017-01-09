@@ -1,6 +1,7 @@
 
 /**
  * Created by lx on 2017/1/4.
+ * 收货地址页面
  */
 angular.module('myApp.myAddress',['ionic']).config(['$stateProvider',function ($stateProvider) {
     $stateProvider.state('tabs.myAddress',{

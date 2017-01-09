@@ -18,13 +18,11 @@
 
     <my-slide-box source-array="home.slideArray" class="slideBox"></my-slide-box>
 
-
-        <!--<img src="http://114.112.94.166/sunny/files/2016/12/29/3d51ee74fab2f62e14a52fd77877e5121b933626" alt="">-->
         <div class="home_rec"></div>
 
         <div  class="row-wrap row home_goodsBox" >
 
-            <div ng-repeat="goods in home.goodsListArray" class="home_goods" ng-click="home.goToDetail()">
+            <div ng-repeat="goods in home.goodsListArray" class="home_goods" ng-click="home.goToDetail($index)">
 
                 <img ng-src="{{goods.goods_introduction}}" alt="">
 

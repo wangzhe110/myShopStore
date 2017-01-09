@@ -13,10 +13,12 @@ angular.module('myApp.homeC',['ionic']).config(['$stateProvider',function ($stat
         }
     });
 
-}]).controller('homeController',['$scope','$state','HttpFactory',function ($scope,$state,HttpFactory) {
+}]).controller('homeController',['$scope','$state','$ionicTabsDelegate','HttpFactory',function ($scope,$state,$ionicTabsDelegate,HttpFactory) {
 
 
-
+    $scope.$on('$ionicView.beforeEnter',function () {
+        $ionicTabsDelegate.showBar(true);
+    });
 
    $scope.home = {
         //搜索
@@ -31,8 +33,10 @@ angular.module('myApp.homeC',['ionic']).config(['$stateProvider',function ($stat
      function search() {
           console.log('进行查询');
      }
-     function goToDetail() {
-            $state.go('tabs.homeDetail')
+     function goToDetail(index) {
+            var  goodsDetail = $scope.home.goodsListArray[index];
+
+            $state.go('tabs.homeDetail',{goodsDetail:goodsDetail.goods_id});
      }
     var url = "http://114.112.94.166/sunny/wap/api/getGoods";
     HttpFactory.getData(url).then(function (result) {
@@ -44,7 +48,7 @@ angular.module('myApp.homeC',['ionic']).config(['$stateProvider',function ($stat
         }
 
         $scope.home.goodsListArray = result.goodsData;
-        console.log( $scope.home.goodsListArray);
+
 
     });
 
