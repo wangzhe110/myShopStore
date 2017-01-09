@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="813c7003-9f74-4e3d-975f-180bec8d355c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/max_size/max_size.css" afterPath="$PROJECT_DIR$/dist/css/max_size/max_size.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/max_size/max_size.min.css" afterPath="$PROJECT_DIR$/dist/css/max_size/max_size.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/middle_size/middle_size.css" afterPath="$PROJECT_DIR$/dist/css/middle_size/middle_size.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/middle_size/middle_size.min.css" afterPath="$PROJECT_DIR$/dist/css/middle_size/middle_size.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/small_size/small_size.css" afterPath="$PROJECT_DIR$/dist/css/small_size/small_size.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/small_size/small_size.min.css" afterPath="$PROJECT_DIR$/dist/css/small_size/small_size.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/home.html" afterPath="$PROJECT_DIR$/dist/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/all.js" afterPath="$PROJECT_DIR$/dist/js/all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/all.min.js" afterPath="$PROJECT_DIR$/dist/js/all.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/max_size/home_max.css" afterPath="$PROJECT_DIR$/src/css/max_size/home_max.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/middle_size/home_middle.css" afterPath="$PROJECT_DIR$/src/css/middle_size/home_middle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/small_size/home_small.css" afterPath="$PROJECT_DIR$/src/css/small_size/home_small.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/home.html" afterPath="$PROJECT_DIR$/src/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/collectionPagerController.js" afterPath="$PROJECT_DIR$/src/js/controllers/collectionPagerController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/homeController.js" afterPath="$PROJECT_DIR$/src/js/controllers/homeController.js" />
     </list>
     <ignored path="myShopStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="15" selection-start-line="3" selection-start-column="9" selection-end-line="5" selection-end-column="15" />
+            <state relative-caret-position="540">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#ion-header-bar#0;n#ion-view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
@@ -83,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home_middle.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home_middle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/middle_size/home_middle.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -197,11 +182,11 @@
         <option value="$PROJECT_DIR$/src/homeDetail.html" />
         <option value="$PROJECT_DIR$/src/js/controllers/tabsController.js" />
         <option value="$PROJECT_DIR$/src/js/controllers/collectionPagerController.js" />
-        <option value="$PROJECT_DIR$/src/home.html" />
         <option value="$PROJECT_DIR$/src/js/controllers/homeController.js" />
         <option value="$PROJECT_DIR$/src/css/max_size/home_max.css" />
         <option value="$PROJECT_DIR$/src/css/middle_size/home_middle.css" />
         <option value="$PROJECT_DIR$/src/css/small_size/home_small.css" />
+        <option value="$PROJECT_DIR$/src/home.html" />
       </list>
     </option>
   </component>
@@ -527,16 +512,16 @@
       <workItem from="1483670255276" duration="4248000" />
       <workItem from="1483751108632" duration="19319000" />
       <workItem from="1483776767516" duration="2864000" />
-      <workItem from="1483864566400" duration="12318000" />
+      <workItem from="1483864566400" duration="12340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171560000" />
+    <option name="totallyTimeSpent" value="171582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="120" y="209" width="1492" height="859" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21801926" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -545,7 +530,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12258953" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12258953" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -963,22 +948,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="15" selection-start-line="3" selection-start-column="9" selection-end-line="5" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#ion-header-bar#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/middle_size/home_middle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#ion-header-bar#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
